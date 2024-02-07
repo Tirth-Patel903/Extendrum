@@ -1,0 +1,712 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--Css and Script Section Start -->
+@section CssScripts{
+    <link rel='stylesheet' id='boldthemes_style_css-css' href="@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("style.crushc1f9.css"))" type='text/css' media='all' data-viewport-units-buggyfill='ignore' />
+    <style type="text/css">
+        body {
+            font-family: 'gothic';
+        }
+    </style>
+    <title>Extendrum</title>
+    <script>
+        if (typeof WebFontConfig === "undefined") {
+            WebFontConfig = new Object();
+        }
+        WebFontConfig['google'] = { families: ['Open+Sans:400,300,700,600', 'Montserrat:700,400', 'Source+Sans+Pro:300&amp;subset=latin'] };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = '../../../ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+    <script type="text/javascript">
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/72x72\/", "ext": ".png", "source": { "concatemoji": "http:\/\/highgradelab.com\/hatch\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2" } };
+        !function (a, b, c) { function d(a) { var c, d = b.createElement("canvas"), e = d.getContext && d.getContext("2d"), f = String.fromCharCode; return e && e.fillText ? (e.textBaseline = "top", e.font = "600 32px Arial", "flag" === a ? (e.fillText(f(55356, 56806, 55356, 56826), 0, 0), d.toDataURL().length > 3e3) : "diversity" === a ? (e.fillText(f(55356, 57221), 0, 0), c = e.getImageData(16, 16, 1, 1).data.toString(), e.fillText(f(55356, 57221, 55356, 57343), 0, 0), c !== e.getImageData(16, 16, 1, 1).data.toString()) : ("simple" === a ? e.fillText(f(55357, 56835), 0, 0) : e.fillText(f(55356, 57135), 0, 0), 0 !== e.getImageData(16, 16, 1, 1).data[0])) : !1 } function e(a) { var c = b.createElement("script"); c.src = a, c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var f, g; c.supports = { simple: d("simple"), flag: d("flag"), unicode8: d("unicode8"), diversity: d("diversity") }, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.simple && c.supports.flag && c.supports.unicode8 && c.supports.diversity || (g = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <link rel='stylesheet' href="@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("services.css"))" type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("stylec1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='js_composer_front-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("js_composer.minc422.css?ver=4.11.1"))' type='text/css' media='all' />
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jqueryc1d8.js?ver=1.11.3"))'></script>
+    <link rel='stylesheet' id='invory-bootstrap-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("bootstrap68b3.css?ver=1"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='invory-style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("style68b3.css?ver=1"))' type='text/css' media='all' />
+    <link rel='stylesheet' href="@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("font.css"))" type='text/css' media='all' />
+    <title>Extendrum</title>
+    <link rel='stylesheet' id='hatch_fontawesome-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("font-awesome.min2fab.css?ver=0831cba6a670e405168b84aa20798347"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("stylec1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='js_composer_front-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("js_composer.minc422.css?ver=4.11.1"))' type='text/css' media='all' />
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jqueryc1d8.js?ver=1.11.3"))'></script>
+}
+
+<!--Css and Script Section End -->
+
+<div class="top">
+    <a href="#" class="back-to-top">
+        <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("up.png"))" />
+
+    </a>
+</div>
+<div class="header_spacer"></div>
+<div id="website_boxed">
+    <div id="services-page" class="row standAlonePage light_scheme">
+        <div class="slideContent gu12">
+            <div class="vc_row wpb_row vc_row-fluid vc_custom_1454683344146 vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving">
+                <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="servicestital">
+                        <div class="vc_column-inner ">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-12 col-xs-12">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <h1><span style="color: #ffffff;" class="green">IT Services</span></h1>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454683417851">
+                                        <div class="wpb_wrapper">
+                                            <h3>
+                                                <span style="color: #9b9b9b;" class="green">
+                                                    Our highly qualified and certified engineers provide professional-grade services for every business needs of yours.
+                                                </span>
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                @*<span style="color: #9b9b9b;">
+                                Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                            </span>*@
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             @*<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1454684848552 vc_row-has-fill vc_column-gap-10">
+                <div class="wpb_column vc_column_container vc_col-sm-3">
+                    <div class="vc_column-inner">
+                        <div class="wpb_wrapper">
+                            <div class="vc_row wpb_row vc_inner vc_row-fluid row-shadow vc_custom_1454683975800 vc_row-has-fill">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                <figure class="wpb_wrapper vc_figure">
+                                                    <div class="vc_single_image-wrapper vc_box_border_grey">
+                                                        <img width="128" height="128" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("service-1.png"))" class="vc_single_image-img attachment-full" alt="service-1" />
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454683947202">
+                                                <div class="wpb_wrapper">
+                                                    <h4 style="text-align: center;">GRAPHIC DESIGN</h4>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454683952322">
+                                                <div class="wpb_wrapper">
+                                                    <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut elit tellus, luctus nec.</p>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454684208399">
+                                                <div class="wpb_wrapper">
+                                                    <p style="text-align: center;">
+                                                        <span style="color: #93c868;">
+                                                            <a style="color: #93c868;" href="#">
+                                                                <i class="icon fa fa-arrow-circle-o-right" style=" font-size:18px!important; ">
+                                                                </i> Learn More
+                                                            </a>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row wpb_row vc_inner vc_row-fluid row-shadow vc_custom_1454684746871 vc_row-has-fill">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                <figure class="wpb_wrapper vc_figure">
+                                                    <div class="vc_single_image-wrapper   vc_box_border_grey">
+                                                        <img width="128" height="128" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("service-5.png"))" class="vc_single_image-img attachment-full" alt="service-5" />
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454926271436">
+                                                <div class="wpb_wrapper">
+                                                    <h4 style="text-align: center;">ANALYTICS</h4>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454683952322">
+                                                <div class="wpb_wrapper">
+                                                    <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut elit tellus, luctus nec.</p>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454684208399">
+                                                <div class="wpb_wrapper">
+                                                    <p style="text-align: center;">
+                                                        <span style="color: #93c868;">
+                                                            <a style="color: #93c868;" href="#">
+                                                                <i class="icon fa fa-arrow-circle-o-right" style=" font-size:18px!important;">
+                                                                </i> Learn More
+                                                            </a>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wpb_column vc_column_container vc_col-sm-3">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <div class="vc_row wpb_row vc_inner vc_row-fluid row-shadow vc_custom_1454683975800 vc_row-has-fill">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                <figure class="wpb_wrapper vc_figure">
+                                                    <div class="vc_single_image-wrapper   vc_box_border_grey">
+                                                        <img width="128" height="128" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("service-2.png"))" class="vc_single_image-img attachment-full" alt="service-2" />
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454926072783">
+                                                <div class="wpb_wrapper">
+                                                    <h4 style="text-align: center;">SEO</h4>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454683952322">
+                                                <div class="wpb_wrapper">
+                                                    <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut elit tellus, luctus nec.</p>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454684208399">
+                                                <div class="wpb_wrapper">
+                                                    <p style="text-align: center;">
+                                                        <span style="color: #93c868;">
+                                                            <a style="color: #93c868;" href="#">
+                                                                <i class="icon fa fa-arrow-circle-o-right" style=" font-size:18px!important;">
+                                                                </i> Learn More
+                                                            </a>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row wpb_row vc_inner vc_row-fluid row-shadow vc_custom_1454684786761 vc_row-has-fill">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                <figure class="wpb_wrapper vc_figure">
+                                                    <div class="vc_single_image-wrapper vc_box_border_grey">
+                                                        <img width="128" height="128" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("service-6.png"))" class="vc_single_image-img attachment-full" alt="service-6" />
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454926292556">
+                                                <div class="wpb_wrapper">
+                                                    <h4 style="text-align: center;">SECURITY</h4>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454683952322">
+                                                <div class="wpb_wrapper">
+                                                    <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut elit tellus, luctus nec.</p>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454684208399">
+                                                <div class="wpb_wrapper">
+                                                    <p style="text-align: center;">
+                                                        <span style="color: #93c868;">
+                                                            <a style="color: #93c868;" href="#">
+                                                                <i class="icon fa fa-arrow-circle-o-right" style=" font-size:18px!important;">
+                                                                </i> Learn More
+                                                            </a>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wpb_column vc_column_container vc_col-sm-3">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <div class="vc_row wpb_row vc_inner vc_row-fluid row-shadow vc_custom_1454683975800 vc_row-has-fill">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                <figure class="wpb_wrapper vc_figure">
+                                                    <div class="vc_single_image-wrapper   vc_box_border_grey">
+                                                        <img width="128" height="128" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("service-3.png"))" class="vc_single_image-img attachment-full" alt="service-3" />
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454926236829">
+                                                <div class="wpb_wrapper">
+                                                    <h4 style="text-align: center;">APP DEVELOPMENT</h4>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454683952322">
+                                                <div class="wpb_wrapper">
+                                                    <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut elit tellus, luctus nec.</p>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454684208399">
+                                                <div class="wpb_wrapper">
+                                                    <p style="text-align: center;">
+                                                        <span style="color: #93c868;">
+                                                            <a style="color: #93c868;" href="#">
+                                                                <i class="icon fa fa-arrow-circle-o-right" style=" font-size:18px!important;">
+                                                                </i> Learn More
+                                                            </a>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row wpb_row vc_inner vc_row-fluid row-shadow vc_custom_1454684790950 vc_row-has-fill">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                <figure class="wpb_wrapper vc_figure">
+                                                    <div class="vc_single_image-wrapper vc_box_border_grey">
+                                                        <img width="128" height="128" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("service-1.png"))" class="vc_single_image-img attachment-full" alt="service-1" />
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454926316925">
+                                                <div class="wpb_wrapper">
+                                                    <h4 style="text-align: center;">BRANDING</h4>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454683952322">
+                                                <div class="wpb_wrapper">
+                                                    <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut elit tellus, luctus nec.</p>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454684208399">
+                                                <div class="wpb_wrapper">
+                                                    <p style="text-align: center;">
+                                                        <span style="color: #93c868;">
+                                                            <a style="color: #93c868;" href="#">
+                                                                <i class="icon fa fa-arrow-circle-o-right" style=" font-size:18px!important;"> </i> Learn More
+                                                            </a>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wpb_column vc_column_container vc_col-sm-3">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <div class="vc_row wpb_row vc_inner vc_row-fluid row-shadow vc_custom_1454683975800 vc_row-has-fill">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                <figure class="wpb_wrapper vc_figure">
+                                                    <div class="vc_single_image-wrapper   vc_box_border_grey"> <img width="128" height="128" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("service-4.png"))" class="vc_single_image-img attachment-full" alt="service-4" /> </div>
+                                                </figure>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454926252818">
+                                                <div class="wpb_wrapper">
+                                                    <h4 style="text-align: center;">MARKETING</h4>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454683952322">
+                                                <div class="wpb_wrapper">
+                                                    <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut elit tellus, luctus nec.</p>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454684208399">
+                                                <div class="wpb_wrapper">
+                                                    <p style="text-align: center;">
+                                                        <span style="color: #93c868;">
+                                                            <a style="color: #93c868;" href="#">
+                                                                <i class="icon fa fa-arrow-circle-o-right" style=" font-size:18px!important;">
+                                                                </i> Learn More
+                                                            </a>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row wpb_row vc_inner vc_row-fluid row-shadow vc_custom_1454684795036 vc_row-has-fill">
+                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                <figure class="wpb_wrapper vc_figure">
+                                                    <div class="vc_single_image-wrapper vc_box_border_grey">
+                                                        <img width="128" height="128" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("service-2.png"))" class="vc_single_image-img attachment-full" alt="service-2" />
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454926346702">
+                                                <div class="wpb_wrapper">
+                                                    <h4 style="text-align: center;">CONTENT MARKETING</h4>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454683952322">
+                                                <div class="wpb_wrapper">
+                                                    <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut elit tellus, luctus nec.</p>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454684208399">
+                                                <div class="wpb_wrapper">
+                                                    <p style="text-align: center;">
+                                                        <span style="color: #93c868;">
+                                                            <a style="color: #93c868;" href="#">
+                                                                <i class="icon fa fa-arrow-circle-o-right" style=" font-size:18px!important;">
+                                                                </i> Learn More
+                                                            </a>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+            <div class="vc_row-full-width vc_clearfix">
+            </div>
+            <div id="mobileapps"></div>
+            <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
+                <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
+                    <div class="vc_column-inner vc_custom_14549269612113">
+                        <div class="wpb_wrapper"> </div>
+                    </div>
+                </div>
+                <div class="wpb_column vc_column_container vc_col-sm-6  ma">
+                    <div class="vc_column-inner vc_custom_1454927258778">
+                        <div class="wpb_wrapper">
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <h2>MOBILE APPS</h2>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element  vc_custom_1454927145946">
+                                <div class="wpb_wrapper">
+                                    <h3>We design native, hybrid and web apps for all scalable platforms. Interactive UI, eye-catching responsiveness is our expertise.</h3>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    @*<p>Humblebrag retro normcore letterpress PBR&amp;B iPhone. Skateboard gochujang chillwave, 8-bit chambray stumptown lo-fi brunch kale chips before they sold out man braid. Humblebrag kogi pickled green juice disrupt migas. Green juice williamsburg cardigan chartreuse plaid franzen, mustache bespoke health goth. Taxidermy 8-bit paleo pug actually skateboard.</p>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vc_row-full-width vc_clearfix">
+            </div>
+
+            <div id="sharepoint"></div>
+            <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
+               
+                <div class="wpb_column vc_column_container vc_col-sm-6 sp">
+                    <div class="vc_column-inner vc_custom_1454927258778">
+                        <div class="wpb_wrapper">
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <h2>SHAREPOINT</h2>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element  vc_custom_1454927145946">
+                                <div class="wpb_wrapper">
+                                    <h3>We fulfil B2B solutions with Microsoft SharePoint Organize, Collaborate, Grow. We master it.</h3>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    @*<p>Humblebrag retro normcore letterpress PBR&amp;B iPhone. Skateboard gochujang chillwave, 8-bit chambray stumptown lo-fi brunch kale chips before they sold out man braid. Humblebrag kogi pickled green juice disrupt migas. Green juice williamsburg cardigan chartreuse plaid franzen, mustache bespoke health goth. Taxidermy 8-bit paleo pug actually skateboard.</p>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
+                    <div class="vc_column-inner vc_custom_14549275991663">
+                        <div class="wpb_wrapper"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="vc_row-full-width vc_clearfix"></div>
+
+            <div id="dynamics"></div>
+            <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
+                <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
+                    <div class="vc_column-inner vc_custom_14549275991665">
+                        <div class="wpb_wrapper"></div>
+                    </div>
+                </div>
+                <div class="wpb_column vc_column_container vc_col-sm-6 dm">
+                    <div class="vc_column-inner vc_custom_1454927258778">
+                        <div class="wpb_wrapper">
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <h2>DYNAMICS</h2>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element  vc_custom_1454927145946">
+                                <div class="wpb_wrapper">
+                                    <h3>With Microsoft Dynamics CRM, Dynamics Nav, Dynamics, GP, Dynamics AX, Dynamics SL we provide your business with integration and customization to connect better with your customers.</h3>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    @*<p>Humblebrag retro normcore letterpress PBR&amp;B iPhone. Skateboard gochujang chillwave, 8-bit chambray stumptown lo-fi brunch kale chips before they sold out man braid. Humblebrag kogi pickled green juice disrupt migas. Green juice williamsburg cardigan chartreuse plaid franzen, mustache bespoke health goth. Taxidermy 8-bit paleo pug actually skateboard.</p>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vc_row-full-width vc_clearfix"></div>
+
+            <div id="php"></div>
+            <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
+               
+                <div class="wpb_column vc_column_container vc_col-sm-6 php">
+                    <div class="vc_column-inner vc_custom_1454927258778">
+                        <div class="wpb_wrapper">
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <h2>OPEN SOURCE</h2>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element  vc_custom_1454927145946">
+                                <div class="wpb_wrapper">
+                                    <h3>We develop, provide services and solution support on open-source technologies including Magento, WordPress, MySQL.</h3>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    @*<p>Humblebrag retro normcore letterpress PBR&amp;B iPhone. Skateboard gochujang chillwave, 8-bit chambray stumptown lo-fi brunch kale chips before they sold out man braid. Humblebrag kogi pickled green juice disrupt migas. Green juice williamsburg cardigan chartreuse plaid franzen, mustache bespoke health goth. Taxidermy 8-bit paleo pug actually skateboard.</p>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
+                    <div class="vc_column-inner vc_custom_14549275991666">
+                        <div class="wpb_wrapper"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="vc_row-full-width vc_clearfix"></div>
+
+            <div id="bi"></div>
+            <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
+                <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
+                    <div class="vc_column-inner vc_custom_14549273981613">
+                        <div class="wpb_wrapper"></div>
+                    </div>
+                </div>
+                
+                <div class="wpb_column vc_column_container vc_col-sm-6 bir">
+                    <div class="vc_column-inner vc_custom_1454927373262">
+                        <div class="wpb_wrapper">
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <h2>POWER BI</h2>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element  vc_custom_1454927145946">
+                                <div class="wpb_wrapper">
+                                    <h3>Give your data meaning. A powerful new-age tool from Microsoft to visualize your business at a glance. We work on it for you.</h3>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    @*<p>Humblebrag retro normcore letterpress PBR&amp;B iPhone. Skateboard gochujang chillwave, 8-bit chambray stumptown lo-fi brunch kale chips before they sold out man braid. Humblebrag kogi pickled green juice disrupt migas. Green juice williamsburg cardigan chartreuse plaid franzen, mustache bespoke health goth. Taxidermy 8-bit paleo pug actually skateboard.</p>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="vc_row-full-width vc_clearfix"></div>
+            
+            <div id="ecommerce"></div>
+            <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
+                <div class="wpb_column vc_column_container vc_col-sm-6 ec">
+                    <div class="vc_column-inner vc_custom_1454927258778">
+                        <div class="wpb_wrapper">
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <h2>E-COMMERCE</h2>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element  vc_custom_1454927145946">
+                                <div class="wpb_wrapper">
+                                    <h3>We provide complete package of professional E-Commerce services like consulting, design, implementation & support services including SEO and AdWords.</h3>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    @*<p>Humblebrag retro normcore letterpress PBR&amp;B iPhone. Skateboard gochujang chillwave, 8-bit chambray stumptown lo-fi brunch kale chips before they sold out man braid. Humblebrag kogi pickled green juice disrupt migas. Green juice williamsburg cardigan chartreuse plaid franzen, mustache bespoke health goth. Taxidermy 8-bit paleo pug actually skateboard.</p>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
+                    <div class="vc_column-inner vc_custom_14549275991664">
+                        <div class="wpb_wrapper"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="vc_row-full-width vc_clearfix"></div>
+           
+            <div id="enterprise"></div>
+            <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
+                <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
+                    <div class="vc_column-inner vc_custom_14549275991668">
+                        <div class="wpb_wrapper"></div>
+                    </div>
+                </div>
+                
+                 <div class="wpb_column vc_column_container vc_col-sm-6 ep">
+                    <div class="vc_column-inner vc_custom_1454927258778">
+                        <div class="wpb_wrapper">
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <h2>ENTERPRISE</h2>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element  vc_custom_1454927145946">
+                                <div class="wpb_wrapper">
+                                    <h3>We customize and integrate third-party softwares like SAP, PeopleSoft and Yardi. We provide long term support & solutions for various enterprise software.</h3>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    @*<p>Humblebrag retro normcore letterpress PBR&amp;B iPhone. Skateboard gochujang chillwave, 8-bit chambray stumptown lo-fi brunch kale chips before they sold out man braid. Humblebrag kogi pickled green juice disrupt migas. Green juice williamsburg cardigan chartreuse plaid franzen, mustache bespoke health goth. Taxidermy 8-bit paleo pug actually skateboard.</p>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+            <div class="vc_row-full-width vc_clearfix"></div>
+
+            
+            <div id="adobe"></div>
+            <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
+                <div class="wpb_column vc_column_container vc_col-sm-6 adb">
+                    <div class="vc_column-inner vc_custom_1454927258778">
+                        <div class="wpb_wrapper">
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <h2>UI/UX</h2>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element  vc_custom_1454927145946">
+                                <div class="wpb_wrapper">
+                                    <h3>We use Adobe software to design websites and webpages. Tools like Wireframe, Dreamweaver and Photoshop lies in our expertise of web development services and solutions.</h3>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    @*<p>Humblebrag retro normcore letterpress PBR&amp;B iPhone. Skateboard gochujang chillwave, 8-bit chambray stumptown lo-fi brunch kale chips before they sold out man braid. Humblebrag kogi pickled green juice disrupt migas. Green juice williamsburg cardigan chartreuse plaid franzen, mustache bespoke health goth. Taxidermy 8-bit paleo pug actually skateboard.</p>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
+                    <div class="vc_column-inner vc_custom_14549275991669">
+                        <div class="wpb_wrapper"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="vc_row-full-width vc_clearfix"></div>
+
+
+
+            
+
+            <div class="vc_row-full-width vc_clearfix"></div>
+
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts{
+    @*<script type="text/javascript">
+        var home_url = 'index.html';
+        var template_directory_uri = '#';
+        var retina_logo_url = '@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("hatch-logo-dark%402x.png"))';
+        var menu_style = '1';
+        var is_front_page = 'true';
+        var custom_js = '';
+    </script>*@
+
+    <div id="hgr_left"></div>
+    <div id="hgr_right"></div>
+    <div id="hgr_top"></div>
+    <div id="hgr_bottom"></div>
+
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("js_composer_front.minc422.js?ver=4.11.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("vc-accordion.minc422.js?ver=4.11.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("vc-tabs.minc422.js?ver=4.11.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("bootstrap.min723f.js?ver=910cd94477e91addc8f40f102a3fec2f"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.animate-colors-minc273.js?ver=4e1ec83ce013c67ccc53c90fa51b5637"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("velocity.mina2dc.js?ver=c1b8d079c7049879838d78e0b389965e"))'></script>
+    <script type='text/javascript'>
+        var menu_js = "<script type=\"text\/javascript\">\n\t\t\t\t\tjQuery(document).ready(function($) {\n\t\t\t\t\t\t\"use strict\";\n\t\t\t\t\t\t\n\t\t\t\t\t\tvar hasBeenTrigged = false;\n\t\t\t\t\t\tvar header_height = $(\".bkaTopmenu\").outerHeight(true);\n\t\t\t\t\t\t\/\/$(\".hgr_woo_minicart\").height($( \".bkaTopmenu\").outerHeight(true) );\n\t\t\t\t\t\t$(\".hgr_woo_minicart\").height(\"80\");\n\t\t\t\t\t\t$(\".dropdown-menu\").animate({backgroundColor: \"rgba(255,255,255 , 1.0)\"}, 500);\n\t\t\t\t\t\t\t\t\t\tif ($(window).scrollTop() > 200 ) {\n\t\t\t\t\t\t\t\t\t\t$(\".bkaTopmenu\").animate({backgroundColor: \"rgba(255,255,255 , 1.0)\"}, 500);\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t}$(window).bind(\"scroll\", function() {\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tif ($(window).scrollTop() > 200 && !hasBeenTrigged ) {\n\t\t\t\t\t\t\t\t\t\t$(\".bkaTopmenu\").animate({backgroundColor: \"rgba(255,255,255 , 1.0)\"}, 500);\n\t\t\t\t\t\t\t\t\t\thasBeenTrigged = true;\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\tif ($(window).scrollTop() < 200 && hasBeenTrigged ) {\n\t\t\t\t\t\t\t\t\t\t$(\".bkaTopmenu\").animate({backgroundColor: \"rgba(255,255,255 , 0.4)\"}, 500);\n\t\t\t\t\t\t\t\t\t\thasBeenTrigged = false;\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}); }); <\/script>";
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("app5956.js?ver=a951ef6936379140991c1d53bd286d24"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("modernizr.customc1f9.js?ver=4.4.2"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("smoothscrolldd9c.js?ver=77ae36888d43fd0e3edff58e2c765108"))'></script>
+}

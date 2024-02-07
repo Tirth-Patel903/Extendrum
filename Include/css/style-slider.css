@@ -1,0 +1,117 @@
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+.clearout {
+height:20px;
+clear:both;
+}
+
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+display:none;
+}
+
+.nbs-flexisel-container {
+    position:relative;
+    max-width:100%;
+}
+#flexiselDemo3 li
+{
+	/*padding:0px;
+	background-color:#eeeeee;	
+	border-bottom:1px solid #000;*/
+	margin-right:5px;
+	margin-top:25px;
+}
+
+.nbs-flexisel-ul {
+    position:relative;
+    width:9999px;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;   
+    text-align:center;  
+}
+
+.nbs-flexisel-inner {
+    overflow:hidden;
+    float:left;
+    width:100%;
+        height: 158px;
+    
+}
+
+.nbs-flexisel-item {
+    float:left;
+   
+}
+.nbs-flexisel-item img {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width:250px;
+    max-height:200px;
+	border-bottom:1px solid #c2c2c2;
+	
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    width: 28px;
+    height: 28px; 
+   position:relative;
+    cursor: pointer;
+    z-index: 100;
+    
+}
+.nbs-flexisel-nav-left {
+   left:-5%;
+    top: 80px !important;
+    background: url(../images/button-previous.png) no-repeat;
+}
+/*.nbs-flexisel-nav-left {
+    left: -90px;
+	top:287px !important;
+	
+	
+    background: url(../images/button-previous.png) no-repeat;
+	
+}*/
+
+/*.nbs-flexisel-nav-right {
+     left: -60px;
+	top:259px  !important;
+    background: url(../images/button-next.png) no-repeat;
+}*/
+
+.nbs-flexisel-nav-right {
+  left:101%;
+    top: 52px !important;
+    background: url(../images/button-next.png) no-repeat;
+}
+.slider-font
+{
+	font-family: 'PT Sans', sans-serif;
+	font-size:15px;
+	text-decoration:none;
+	color:#000;
+}
+@media screen and (max-width:768px)
+{
+
+	.nbs-flexisel-nav-left {
+     display:none;
+	
+    background: url(../images/button-previous.png) no-repeat;
+	
+}
+
+.nbs-flexisel-nav-right {
+    
+	display:none;
+	
+    background: url(../images/button-next.png) no-repeat;
+}
+}

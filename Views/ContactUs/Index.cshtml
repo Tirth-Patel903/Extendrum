@@ -1,0 +1,349 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using Extendrum.Models;
+
+@section CssScripts{
+    <title>Extendrum</title>
+<script>
+if ( typeof WebFontConfig === "undefined" ) {
+	WebFontConfig = new Object();
+}
+WebFontConfig['google'] = {families: ['Open+Sans:400,300,700,600', 'Montserrat:700,400', 'Source+Sans+Pro:300&amp;subset=latin']};
+(function() {
+	var wf = document.createElement( 'script' );
+	wf.src = '../../../ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+	wf.type = 'text/javascript';
+	wf.async = 'true';
+	var s = document.getElementsByTagName( 'script' )[0];
+	s.parentNode.insertBefore( wf, s );
+})();
+</script>
+@*<link rel="alternate" type="application/rss+xml" title="Hatch - Premium MultiPurpose WordPress Theme &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Hatch - Premium MultiPurpose WordPress Theme &raquo; Comments Feed" href="../comments/feed/index.html" />*@
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/highgradelab.com\/hatch\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<link rel='stylesheet' id='hatch_style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("stylec1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("js_composer.minc422.css?ver=4.11.1"))' type='text/css' media='all' />
+<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?v=3.exp&amp;ver=4.4.2'></script>
+<link rel='stylesheet' id='boldthemes_style_css-css' href="@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("style.crushc1f9.css"))" type='text/css' media='all' data-viewport-units-buggyfill='ignore' />
+
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("modernizr.customc1f9.js?ver=4.4.2"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("miscc1f9.js?ver=4.4.2"))'></script>
+<style type="text/css">
+    body {
+        font-family: 'gothic';
+    }
+</style>
+<link rel='stylesheet' id='invory-bootstrap-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("bootstrap68b3.css?ver=1"))' type='text/css' media='all' />
+<link rel='stylesheet' id='invory-style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("style68b3.css?ver=1"))' type='text/css' media='all' />
+<link rel='stylesheet' id='invory-style-css' href="@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("contact.css"))" type='text/css' media='all' />
+<link rel='stylesheet' href="@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("font.css"))" type='text/css' media='all' />
+<title>Extendrum</title>
+<link rel='stylesheet' id='hgr-vc-extender-style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("hgr-vc-extender-elements.minc1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+
+<link rel='stylesheet' id='hatch_fontawesome-css' href="@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("fonts/font-awesome.min2fab.css"))" type='text/css' media='all' />
+
+
+<link rel='stylesheet' id='hatch_style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("stylec1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("js_composer.minc422.css?ver=4.11.1"))' type='text/css' media='all' />
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jqueryc1d8.js?ver=1.11.3"))'>
+</script>
+}
+
+<div class="top">
+    <a href="#" class="back-to-top">
+        <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("up.png"))" />
+    </a>
+</div>
+@using (Html.BeginForm("SubmitForm", "ContactUs", FormMethod.Post, new { id = "submitForm"}))
+{
+
+
+<div id="website_boxed">
+    <div id="contact-page" class="row standAlonePage   light_scheme" style="   ">
+        <div class="col-md-12">
+            <div class="">
+                <div class="slideContent gu12">
+                    <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="1.5" data-vc-parallax-image="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("contact-page-top.jpg"))" class="vc_row wpb_row vc_row-fluid vc_custom_1454931288917 vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <h1><span style="color: #ffffff;" class="green">Contact</span></h1>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454683417851">
+                                        <div class="wpb_wrapper">
+                                            <h3>
+                                                <span style="color: #9b9b9b;"></span><br />
+                                                <span style="color: #9b9b9b;"></span>
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row-full-width vc_clearfix"></div>
+                    <div class="vc_row wpb_row vc_row-fluid vc_custom_1454931492170">
+                        <div class="wpb_column vc_column_container vc_col-sm-3">
+                            <div class="vc_column-inner">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <h4>ADDRESS</h4>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454931709548">
+                                        <div class="wpb_wrapper">
+                                            <a href="@Url.Action("Index","ContactUs")#map">
+                                                <p>
+                                                    11340 SW 60th Ave,<br />
+                                                    Portland,
+                                                    OR 97219.<br />
+
+                                                </p>
+                                                </a>
+</div>
+                                    </div>
+
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <h4>CONTACT DETAILS</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454932165633">
+                                        <div class="wpb_wrapper">
+                                            <p>
+                                                +1 503 575 3267<br />
+                                                +1 503 768 4262<br />
+                                                <a class="link-curtain" href="#">sales@extendrum.com</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <h4>FOLLOW US</h4>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454932774966">
+                                        <div class="wpb_wrapper">
+                                            <p>
+                                                Keep in touch with us<br />
+                                                for latest news &amp; updates.
+                                            </p>
+                                            <p>
+                                                <a href="#">
+                                                    <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("t11.png"))" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("t22.png"))" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("t33.png"))" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("t44.png"))" />
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wpb_column vc_column_container vc_col-sm-3">
+                            <div class="vc_column-inner">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_text_column wpb_content_element">
+                                        <div class="wpb_wrapper">
+                                            <h4>MAILING ADDRESS</h4>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_text_column wpb_content_element vc_custom_1454933092653">
+                                        <div class="wpb_wrapper">
+                                            <p>
+                                                6627 NW 165th Ave<br />
+                                                Portland, OR 97229.<br />
+                                                </p>
+                                            </div>
+                                        </div>
+                                                <div class="wpb_text_column wpb_content_element">
+                                                    <div class="wpb_wrapper">
+                                                        <h4>SUPPORT</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="wpb_text_column wpb_content_element vc_custom_1454933092653">
+                                                    <div class="wpb_wrapper">
+                                            <p>
+                                               
+                                                <a class="link-curtain" href="#">support@extendrum.com</a><br /><br />
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_text_column wpb_content_element">
+                                        <div class="wpb_wrapper">
+                                            <h4>SALES</h4>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_text_column wpb_content_element vc_custom_1454933143355">
+                                        <div class="wpb_wrapper">
+                                            <p>
+                                               
+                                                <a class="link-curtain" href="#">sales@extendrum.com</a><br />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wpb_column vc_column_container vc_col-sm-6">
+                            <div class="vc_column-inner">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <div role="form" class="wpcf7" id="wpcf7-f6-p189-o1" lang="en-US" dir="ltr">
+                                                <div class="screen-reader-response">
+                                                </div>
+                                                @*<form action="http://highgradelab.com/hatch/contact-page/#wpcf7-f6-p189-o1" method="post" class="wpcf7-form" novalidate>*@
+                                                    <div style="display: none;">
+                                                        <input type="hidden" name="_wpcf7" value="6" />
+                                                        <input type="hidden" name="_wpcf7_version" value="4.3.1" />
+                                                        <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f6-p189-o1" />
+                                                        <input type="hidden" name="_wpnonce" value="2ac4e2d37a" />
+                                                    </div>
+                                                    <p>
+                                                        <span class="wpcf7-form-control-wrap your-name">
+                                                            @*<input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name" id="txtName" />*@
+                                                            @Html.TextBox("Name", null, new { @class = "wpcf7-form-control wpcf7-text wpcf7-validates-as-required", placeholder = "Name",@required="required" })
+                                                        </span>
+                                                        <br />
+                                                        <span class="wpcf7-form-control-wrap email">
+                                                            @*<input type="email" id="txtEmail" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email" />*@
+                                                            @Html.TextBox("Email", null, new { @class = "wpcf7-form-control wpcf7-text wpcf7-validates-as-required", placeholder = "Email", @required = "required" })
+                                                        </span>
+                                                        <br />
+                                                        <span class="wpcf7-form-control-wrap phone">
+                                                            @*<input type="text" id="txtPhone" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone" />*@
+                                                            @Html.TextBox("Phone", null, new { @class = "wpcf7-form-control wpcf7-text wpcf7-validates-as-required", placeholder = "Phone", @required = "required" })
+                                                        </span>
+                                                        <br />
+                                                        <span class="wpcf7-form-control-wrap your-message">
+                                                        @Html.TextArea("Message",null,new {@class = "wpcf7-form-control wpcf7-text wpcf7-validates-as-required", placeholder = "Message"})
+                                                            @*<textarea id="txtMessage" name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Message"></textarea>*@
+                                                        </span><br />
+                                                        <input type="submit" id="btnSubmit" value="SEND" class="wpcf7-form-control wpcf7-submit" />
+                                                    </p>
+                                                    <div class="wpcf7-response-output wpcf7-display-none">
+                                                    </div>
+                                                @*</form>*@
+                                            </div>
+											<!-- <div data-form-block-id="39b34755-70aa-ec11-983f-000d3a1b8a9f"></div>  -->
+											<!-- <script src="https://mktdplp102cdn.azureedge.net/public/latest/js/form-loader.js?v=1.77.1005"></script>  -->
+											<!-- <div id="dlopgOPwxSIVUkJGJHMwKlNcGkPdHxntX--RtMNM3gwM"></div> -->
+											<!-- <script src="https://mktdplp102cdn.azureedge.net/public/latest/js/ws-tracking.js?v=1.77.1005"></script> -->
+											<!-- <div class="d365-mkt-config" style="display:none" data-website-id="lopgOPwxSIVUkJGJHMwKlNcGkPdHxntX--RtMNM3gwM" data-hostname="f292bcd5ecbb4b0e9dd67d6f0bd190fe.svc.dynamics.com"></div> -->
+											<!-- <div data-form-block-id="e2c248ab-4aa4-ec11-983f-0022482c882c"></div>  -->
+											<!-- <script src="https://mktdplp102cdn.azureedge.net/public/latest/js/form-loader.js?v=1.77.1005"></script>  -->
+											<!-- <div id="dIfqlKS-6Y2yONRjzC3MgaWcSIoS_EelWgYJCmuZWU8Q"></div> -->
+											<!-- <script src="https://mktdplp102cdn.azureedge.net/public/latest/js/ws-tracking.js?v=1.77.1005"></script> -->
+											<!-- <div class="d365-mkt-config" style="display:none" data-website-id="IfqlKS-6Y2yONRjzC3MgaWcSIoS_EelWgYJCmuZWU8Q" data-hostname="f292bcd5ecbb4b0e9dd67d6f0bd190fe.svc.dynamics.com"></div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a id="map"></a>
+                    <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div id="hgr56fa15bbf2094" class="hgr-map-canvas" style="width:100%;height:450px;">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.3338024119957!2d-122.74029978444324!3d45.442929179100645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950cbddcbecb73%3A0xa3f1b8c9a528bf07!2sExtendrum+Technologies!5e0!3m2!1sen!2sin!4v1459578589355" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc_row-full-width vc_clearfix">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="hgr_left"></div>
+    <div id="hgr_right"></div>
+    <div id="hgr_top"></div>
+    <div id="hgr_bottom"></div>
+</div>
+    
+}
+
+@section Scripts{
+
+@*<script type="text/javascript">
+    var home_url = 'index.html';
+    var template_directory_uri = '#';
+    var retina_logo_url = '../../Include/images/hatch-logo-dark%402x.png';
+    var menu_style = '1';
+    var is_front_page = 'true';
+    var custom_js = '';
+</script>*@
+<div id="hgr_left"></div>
+<div id="hgr_right"></div>
+<div id="hgr_top"></div>
+<div id="hgr_bottom"></div>
+<!--Website Boxed END-->
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("comment-reply.minc1f9.js?ver=4.4.2"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.form.mind03d.js?ver=3.51.0-2014.06.20"))'></script>
+<script type='text/javascript'>
+    var _wpcf7 = { "loaderUrl": "http:\/\/highgradelab.com\/hatch\/business\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif", "recaptchaEmpty": "Please verify that you are not a robot.", "sending": "Sending ...", "cached": "1" };
+</script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("scripts5b31.js?ver=4.3.1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("hgr_essentialsc1f9.js?ver=4.4.2"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("frontend68b3.js?ver=1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("bootstrap.min723f.js?ver=910cd94477e91addc8f40f102a3fec2f"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("imagesloadedab72.js?ver=7dfca5aa644a1bcf8489ae6f22e7f7fa"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("isotope.pkgd.minc422.js?ver=4.11.1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("waypoints.minc422.js?ver=4.11.1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("venobox.mined28.js?ver=51b63f5516d49770baf0889df087c89c"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.animate-colors-minc273.js?ver=4e1ec83ce013c67ccc53c90fa51b5637"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("velocity.mina2dc.js?ver=c1b8d079c7049879838d78e0b389965e"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jcookiec433.js?ver=0f1f6cd6e0036897019b376d38593403"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("smoothscrolldd9c.js?ver=77ae36888d43fd0e3edff58e2c765108"))'></script>
+<script type='text/javascript'>
+    var menu_js = "<script type=\"text\/javascript\">\n\t\t\t\t\tjQuery(document).ready(function($) {\n\t\t\t\t\t\t\"use strict\";\n\t\t\t\t\t\t\n\t\t\t\t\t\tvar hasBeenTrigged = false;\n\t\t\t\t\t\tvar header_height = $(\".bkaTopmenu\").outerHeight(true);\n\t\t\t\t\t\t\/\/$(\".hgr_woo_minicart\").height($( \".bkaTopmenu\").outerHeight(true) );\n\t\t\t\t\t\t$(\".hgr_woo_minicart\").height(\"80\");\n\t\t\t\t\t\t$(\".dropdown-menu\").animate({backgroundColor: \"rgba(255,255,255 , 1.0)\"}, 500);\n\t\t\t\t\t\t\t\t\t\tif ($(window).scrollTop() > 200 ) {\n\t\t\t\t\t\t\t\t\t\t$(\".bkaTopmenu\").animate({backgroundColor: \"rgba(255,255,255 , 1.0)\"}, 500);\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t}$(window).bind(\"scroll\", function() {\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tif ($(window).scrollTop() > 200 && !hasBeenTrigged ) {\n\t\t\t\t\t\t\t\t\t\t$(\".bkaTopmenu\").animate({backgroundColor: \"rgba(255,255,255 , 1.0)\"}, 500);\n\t\t\t\t\t\t\t\t\t\thasBeenTrigged = true;\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\tif ($(window).scrollTop() < 200 && hasBeenTrigged ) {\n\t\t\t\t\t\t\t\t\t\t$(\".bkaTopmenu\").animate({backgroundColor: \"rgba(255,255,255 , 0.4)\"}, 500);\n\t\t\t\t\t\t\t\t\t\thasBeenTrigged = false;\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}); }); <\/script>";
+</script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("app5956.js?ver=a951ef6936379140991c1d53bd286d24"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("wp-embed.minc1f9.js?ver=4.4.2"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("js_composer_front.minc422.js?ver=4.11.1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("skrollr.minc422.js?ver=4.11.1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("vc-accordion.minc422.js?ver=4.11.1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("vc-tta-autoplay.minc422.js?ver=4.11.1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("vc-tabs.minc422.js?ver=4.11.1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("modernizr.customc1f9.js?ver=4.4.2"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("stepsFormc1f9.js?ver=4.4.2"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.appearc1f9.js?ver=4.4.2"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("hgr_progressbarc1f9.js?ver=4.4.2"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("owl.carousel.minc1f9.js?ver=4.4.2"))'></script>
+}
+

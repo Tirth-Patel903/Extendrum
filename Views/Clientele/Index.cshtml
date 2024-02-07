@@ -1,0 +1,899 @@
+﻿@{
+    ViewBag.Title = "Clientele";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section CssScripts{
+    <link rel='stylesheet' id='contact-form-7-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("styles5b31.css?ver=4.3.1"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='essential-grid-plugin-settings-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("settings5bfb.css?ver=2.0.9.1"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='tp-open-sans-css' href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&amp;ver=4.4.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='tp-raleway-css' href='http://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;ver=4.4.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='tp-droid-serif-css' href='http://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700&amp;ver=4.4.2' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='theshop-essentials-style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("hgr_essentialsc1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hgrmenu_frontend_style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("frontendc1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='sage-qcv-style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("hgr_qcva8c8.css?ver=5c9b904a8e09cb73a147f87d94b1bac8"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hgr-vc-fa-icons-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("font-awesome.minc1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hgr-vc-outline-icons-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("outline.minc1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hgr-vc-extender-style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("hgr-vc-extender-elements.minc1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='rs-plugin-settings-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("settingsa830.css?ver=5.2.3.5"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-layout-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("woocommerce-layout4468.css?ver=2.5.5"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-smallscreen-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("woocommerce-smallscreen4468.css?ver=2.5.5"))' type='text/css' media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' id='woocommerce-general-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("woocommerce4468.css?ver=2.5.5"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_css_bootstrap-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("bootstrap.minb4f3.css?ver=4f85128aae27be52b72f8eff266b1429"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_icons-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("iconsca1e.css?ver=6bff375d997d4aab7cc95916f46bf68d"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_fontawesome-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("font-awesome.min2fab.css?ver=0831cba6a670e405168b84aa20798347"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_css_component-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("componentecac.css?ver=4ec78b20e6d3bfab577dbb16071a9c17"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_venobox-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("venoboxec8a.css?ver=36e2a68160d731d492a8298d435af5f0"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("stylec1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='js_composer_front-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("js_composer.minc422.css?ver=4.11.1"))' type='text/css' media='all' />
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jqueryc1d8.js?ver=1.11.3"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery-migrate.min1576.js?ver=1.2.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("lightbox5bfb.js?ver=2.0.9.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.themepunch.tools.min5bfb.js?ver=2.0.9.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.themepunch.essential.min5bfb.js?ver=2.0.9.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.themepunch.revolution.mina830.js?ver=5.2.3.5"))'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wc_add_to_cart_params = { "ajax_url": "\/hatch\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/hatch\/about-us-page\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View Cart", "cart_url": "http:\/\/highgradelab.com\/hatch\/cart\/", "is_cart": "", "cart_redirect_after_add": "no" };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("frontend/add-to-cart.min4468.js?ver=2.5.5"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("vendors/woocommerce-add-to-cartc422.js?ver=4.11.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("modernizr.custom9de3.js?ver=8ad0221f07e9385429f5dd1102ba94a6"))'></script>
+    <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?v=3.exp&amp;ver=4.4.2'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("classiec1f9.js?ver=4.4.2"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("uiMorphingButton_fixedc1f9.js?ver=4.4.2"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("uiMorphingButton_inflowc1f9.js?ver=4.4.2"))'></script>
+    <link rel='https://api.w.org/' href='http://highgradelab.com/hatch/wp-json/' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://highgradelab.com/hatch/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://highgradelab.com/hatch/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 4.4.2" />
+    <meta name="generator" content="WooCommerce 2.5.5" />
+    <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress." />
+    <meta name="generator" content="Powered by Slider Revolution 5.2.3.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+    <link rel='stylesheet' id='boldthemes_style_css-css' href="@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("style.crushc1f9.css"))" type='text/css' media='all' data-viewport-units-buggyfill='ignore' />
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jqueryc1d8.js?ver=1.11.3"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("modernizr.customc1f9.js?ver=4.4.2"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("miscc1f9.js?ver=4.4.2"))'></script>
+    <style type="text/css">
+        body {
+            font-family: 'gothic';
+        }
+    </style>
+    <link rel='stylesheet' id='invory-bootstrap-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("bootstrap68b3.css?ver=1"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='invory-style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("style68b3.css?ver=1"))' type='text/css' media='all' />
+    <link rel='stylesheet' href="@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("font.css"))" type='text/css' media='all' />
+    <title>Extendrum</title>
+    <link rel='stylesheet' id='hgr-vc-extender-style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("hgr-vc-extender-elements.minc1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_fontawesome-css' href="@Url.Content("~/Include/css/fonts/" + System.IO.Path.GetFileName("font-awesome.min2fab.css"))" type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("stylec1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='js_composer_front-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("js_composer.minc422.css?ver=4.11.1"))' type='text/css' media='all' />
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jqueryc1d8.js?ver=1.11.3"))'>
+    </script>
+}
+
+
+<div class="top">
+    <a href="#" class="back-to-top">
+        <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("up.png"))" />
+    </a>
+</div>
+
+<!------------ top slaiding over ---------------->
+
+<div id="about-us-page" class="row standAlonePage light_scheme">
+    <div class="col-md-12">
+        <div class="">
+            <div class="slideContent gu12">
+                <!------------ contant hedding start --------------------->
+                <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="1.5" data-vc-parallax-image="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("top-1.jpg"))" class="vc_row wpb_row vc_row-fluid vc_custom_1454408868857 vc_row-has-fill vc_row-o-content-middle vc_row-flex vc_general vc_parallax vc_parallax-content-moving" style="padding-top:95px;">
+                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_column-inner">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-12 col-xs-12">
+                                    <div class="wpb_wrapper">
+                                        <div class="wpb_text_column wpb_content_element">
+                                            <div class="wpb_wrapper">
+                                                <h1><span style="color:#ffffff;" class="green">Clientele</span></h1>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_text_column wpb_content_element  vc_custom_1454408708621">
+                                            <div class="wpb_wrapper">
+                                                <h3>
+                                                    <span style="color: #9b9b9b;" class="green">We are an IT service company but we are a trusted entity in a wide variety of industry. We do not limit ourselves to the type of work and certainly not for what industry it is. Below is the list of clients we are and have been working with.</span>
+                                                    <span style="color: #9b9b9b;"></span>
+                                                    <br /><br /><br />
+
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                <div class="vc_row-full-width vc_clearfix"></div>
+                <div class="vc_row wpb_row vc_row-fluid vc_custom_1454670055907">
+                    <!------------ our mision start --------------------->
+                    <!------------ our mision over --------------------->
+                    <!------------ our vision start --------------------->
+                    <!------------ our vision over --------------------->
+                </div>
+
+                <!------------ our services start --------------------->
+                <a id="ourview"></a>
+
+                <!------------ our services over --------------------->
+                <div class="vc_row-full-width vc_clearfix"></div>
+
+                <!------------ our team start --------------------->
+
+                <a id="ourteam"></a>
+
+                <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1454671439328">
+
+
+                    <p>&nbsp;</p>
+                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_column-inner ">
+                            <div class="container">
+                                <div class="row">
+                                    <a href="http://www.asentria.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client01.jpg"))" alt="" class="img-responsive" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                 Telecom<br>
+                                                 Seattle, Washington, USA
+                                            </p>
+                                            <!-- <p class="c-font" >Ascentria</p>-->
+                                        </div>
+                                    </a>
+                                    <a href="http://www.ignitioninterlock.biz/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client23.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                Automobile<br>
+                                                Silverdale, Washington, USA
+                                            </p>
+                                            <!-- <p class="c-font" >Texas Capital Partners</p>-->
+                                        </div>
+                                    </a>
+                                    <a href="https://www.bastiansolutions.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client02.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                Infrastructure/Software<br>
+                                                Louisville, Kentucky, USA
+
+                                            </p>
+                                            <!--<p class="c-font" >Bastian Solutions</p>-->
+                                        </div>
+                                    </a>
+                                    <a href="http://www.bestvaluepdx.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client03.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                Hospitality/Travel<br>
+                                                Portland, Oregon, USA
+                                            </p>
+                                            <!--<p class="c-font" >Bestvalueinn</p>-->
+                                        </div>
+                                    </a>
+                                  
+
+                          
+                                </div>
+
+                                <div class="row">
+                                    <a href="http://www.bluearchtech.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client36.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                IT Infrastructure<br>
+                                                Beaverton, Oregon, USA
+                                            </p>
+                                            <!-- <p class="c-font" >Texas Capital Partners</p>-->
+                                        </div>
+                                    </a>
+
+                                    <a href="http://www.carlaprop.com/ " target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client06.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                Real Estate<br>
+                                                Portland, Oregon, USA
+                                            </p>
+                                            <!-- <p class="c-font" >Carla Prop</p>-->
+                                        </div>
+                                    </a>
+                                                                                                  
+                                    <a href="http://www.caveon.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client07.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                IT Security<br>
+                                                Midvale, Utah, USA
+
+                                            </p>
+                                            <!-- <p class="c-font" >Caveon</p>-->
+                                        </div>
+                                    </a>
+                                    <a href="http://www.colotek.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client08.jpg"))" alt="" class="img-responsive" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                IT Project Management<br>
+                                                Seattle, Washington, USA
+
+                                            </p>
+                                            <!-- <p class="c-font" >Colotek</p>-->
+                                        </div>
+                                    </a>
+                                </div>
+
+
+                                <div class="row">
+                                    <a href="http://www.cspdx.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client09.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                Hospitality/Travel<br>
+                                                Portland, Oregon, USA
+                                            </p>
+                                            <!--<p class="c-font" >Comfortsuits</p>-->
+                                        </div>
+                                    </a>
+                                   
+
+                                    <a href="http://www.curas.net/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client25.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                Health Care<br>
+                                                Dardenne Prairie, Missouri, USA
+                                            </p>
+                                            <!--<p class="c-font" >Sysgain</p>-->
+                                        </div>
+                                    </a>
+
+                                    <a href="http://www.dramatists.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client26.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                IT & Marketing<br>
+                                                South New York, New York, USA
+                                            </p>
+                                            <!-- <p class="c-font" >Texas Capital Partners</p>-->
+                                        </div>
+                                    </a>
+                                    <a href="https://www.dunncarney.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client11.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                Law Service<br>
+                                                Portland, Oregon, USA
+                                            </p>
+                                            <!--<p class="c-font" >Dunncarney</p>-->
+                                        </div>
+                                    </a>
+                                   
+                                </div>
+
+                              
+
+
+                                <div class="row">
+                                    <a href="http://www.earth9.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("earth9.jpg"))" alt="" class="img-responsive" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                Professional Services<br>
+                                                Singapore
+                                            </p>
+                                            <!-- <p class="c-font" >Enhabit</p>-->
+                                        </div>
+                                    </a>
+                                    <a href="http://www.ecsm.com.my/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("ecsm1.jpg"))" alt="" class="img-responsive" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px; letter-spacing:-1px;" class="aboutclient">
+                                                E-Commerce Services<br>
+                                                Petaling Jaya, Selangor, Malayasia
+                                            </p>
+                                            <!-- <p class="c-font" >Enhabit</p>-->
+                                        </div>
+                                    </a>
+                                    <a href="https://enhabit.org/#B" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client12.jpg"))" alt="" class="img-responsive" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                Energy Services/Non profit<br>
+                                                Portland, Oregon, USA
+                                            </p>
+                                            <!-- <p class="c-font" >Enhabit</p>-->
+                                        </div>
+                                    </a>
+                                    <a href="http://www.exormedia.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client18.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                Software Services<br>
+                                                Great Neck, New York, USA
+                                            </p>
+                                            <!--<p class="c-font" >logo</p>-->
+                                        </div>
+                                    </a>
+
+                                    </div>
+                                <div class="row">
+                                    <a href="http://www.flashtagphoto.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client14.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                Photography<br>
+                                                Los Angeles, California, USA
+                                            </p>
+                                            <!-- <p class="c-font" >Flashtag</p>-->
+                                        </div>
+                                    </a>
+                                    <a href="http://www.forestgroveinn.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client27.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                Hospitality/Travel<br>
+                                                Portland, Oregon, USA
+                                            </p>
+                                            <!-- <p class="c-font" >Texas Capital Partners</p>-->
+                                        </div>
+                                    </a>
+                                    <a href="http://fusioncreative.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("fusioncreative.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                Creative Communications<br>
+                                                Jersey City, New Jersey, USA
+                                            </p>
+                                            <!-- <p class="c-font" >Fusiondesigns</p>-->
+                                        </div>
+                                    </a>
+                                    <a href="http://intellitect.com" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client16.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+           box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+        padding: 12px 12px;" class="aboutclient">
+                                                IT Services<br>
+                                                Spokane, Washington, USA
+                                            </p>
+                                            <!-- <p class="c-font" >Texas Capital Partners</p>-->
+                                        </div>
+                                    </a>
+                                  </div>
+
+                                <div class="row">
+                                    <a href="http://intellitect.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client16.jpg"))" alt="" class="img-responsive" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                IT Services<br>
+                                                Spokane, Washington, USA
+                                            </p>
+                                            <!-- <p class="c-font" >Intellitect</p>-->
+                                        </div>
+                                    </a>
+                                  
+                                    <a href="http://www.leapagency.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("leap.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+           box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+        padding: 12px 12px;" class="aboutclient">
+                                                Digital Marketing<br>
+                                                Louisville, Kentucky, USA
+                                            </p>
+                                            <!--<p class="c-font" >Sysgain</p>-->
+                                        </div>
+                                    </a>
+                                    <a href="https://metropcworks.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client29.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+           box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+        padding: 12px 12px;" class="aboutclient">
+                                                Computer and Network Services<br>
+                                                Portland, Oregon, USA
+                                            </p>
+                                            <!--<p class="c-font" >Sysgain</p>-->
+                                        </div>
+                                    </a>
+
+                                    <a href="http://nexfirm.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client30.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+           box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+        padding: 12px 12px;" class="aboutclient">
+                                                Profesional Services<br>
+                                                New York, USA
+                                            </p>
+                                            <!-- <p class="c-font" >Texas Capital Partners</p>-->
+                                        </div>
+                                    </a>
+
+                                </div>
+                                
+                                 <div class="row">
+
+                                   
+                                   
+
+                                     <a href="http://www.nsc.org/pages/home.aspx" target="_blank">
+                                         <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                             <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("nsc.jpg"))" class="img-responsive" alt="" />
+                                             <p style="font-size:12px; font-size: 12px;
+           box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+        padding: 12px 12px;" class="aboutclient">
+                                                 Government Services<br>
+                                                 Itasca, Illinois, USA
+                                             </p>
+                                             <!-- <p class="c-font" >Texas Capital Partners</p>-->
+                                         </div>
+                                     </a>
+
+                                     <a href="http://www.pioneerpacific.edu/" target="_blank">
+                                         <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                             <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client31.jpg"))" class="img-responsive" alt="" />
+                                             <p style="font-size:12px; font-size: 12px;
+           box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+        padding: 12px 12px;" class="aboutclient">
+                                                 Education<br>
+                                                 Beaverton, Oregon, USA
+                                             </p>
+                                             <!-- <p class="c-font" >Texas Capital Partners</p>-->
+                                         </div>
+                                     </a>
+                                     <a href="http://www.primeweb.it/" target="_blank">
+                                         <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                             <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("primeweb.jpg"))" class="img-responsive" alt="" />
+                                             <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                 Multimedia Marketing<br>
+                                                 Milano, Italy
+                                             </p>
+                                             <!-- <p class="c-font" >Prowess</p>-->
+                                         </div>
+                                     </a>
+
+                                     <a href="http://www.printerland.co.uk/" target="_blank">
+                                         <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                             <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("printerland.jpg"))" class="img-responsive" alt="" />
+                                             <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                 Office Supply<br>
+                                                 Cheshire,  United Kingdom
+
+                                             </p>
+                                             <!-- <p class="c-font" >Prowess</p>-->
+                                         </div>
+                                     </a>
+                                 </div>
+                                <div class="row">
+                                    <a href="http://www.prowess.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client19.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                Health Care<br>
+                                                Concord, California, USA
+                                            </p>
+                                            <!-- <p class="c-font" >Prowess</p>-->
+                                        </div>
+                                    </a>
+                                    <a href="http://www.rentcheckcorp.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client05.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                Government Services<br>
+                                                Toronto, Ontario, Canada
+                                            </p>
+                                            <!--<p class="c-font" >btm</p>-->
+                                        </div>
+                                    </a>
+
+                                    <a href="http://www.singlemindconsulting.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client20.jpg"))" alt="" class="img-responsive" />
+                                            <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                Software Services<br>
+                                                Portland, Oregon, USA
+                                            </p>
+                                            <!-- <p class="c-font" >Singlemind</p>-->
+                                        </div>
+                                    </a>
+                                    <a href="http://www.snapon.com/" target="_blank">
+                                        <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                            <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client32.jpg"))" class="img-responsive" alt="" />
+                                            <p style="font-size:12px; font-size: 12px;
+           box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+        padding: 12px 12px;" class="aboutclient">
+                                                Hardware tools<br>
+                                                California, USA
+                                            </p>
+                                            <!-- <p class="c-font" >Texas Capital Partners</p>-->
+                                        </div>
+                                    </a>
+
+                                </div>
+                               
+
+                                    <div class="row">
+                                       
+                                    
+                                      
+
+                                     
+                                        <a href="http://spotcolormarketing.com/" target="_blank">
+                                            <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                                <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client33.jpg"))" class="img-responsive" alt="" />
+                                                <p style="font-size:12px; font-size: 12px;
+           box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+        padding: 12px 12px;" class="aboutclient">
+                                                    IT & Marketing<br>
+                                                    Portland, Oregon, USA
+                                                </p>
+                                                <!--<p class="c-font" >Sysgain</p>-->
+                                            </div>
+                                        </a>
+                                        <a href="http://www.streetmoda.com/" target="_blank">
+                                            <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                                <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("streetmoda.jpg"))" class="img-responsive" alt="" />
+                                                <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                    Fashion and Apparel <br>
+                                                    Louisville, Kentucky, USA
+                                                </p>
+                                                <!--<p class="c-font" >Sysgain</p>-->
+                                            </div>
+                                        </a>
+
+                                        <a href="http://www.sysgain.com/" target="_blank">
+                                            <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                                <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client21.jpg"))" class="img-responsive" alt="" />
+                                                <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                    IT Services<br>
+                                                    Portland, Oregon, USA
+                                                </p>
+                                                <!--<p class="c-font" >Sysgain</p>-->
+                                            </div>
+                                        </a>
+                                        <a href="http://www.texascapitalpartners.com/" target="_blank">
+                                            <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                                <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client22.jpg"))" class="img-responsive" alt="" />
+                                                <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                    Equity Investments<br>
+                                                    Austin, Texas, USA
+                                                </p>
+                                                <!-- <p class="c-font" >Texas Capital Partners</p>-->
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                           
+
+                                    <div class="row">
+                                     
+                                      
+                                        
+                                        <a href="http://thomsonreuters.com/" target="_blank">
+                                            <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                                <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client34.jpg"))" class="img-responsive" alt="" />
+                                                <p style="font-size:12px; font-size: 12px;
+           box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+        padding: 12px 12px;" class="aboutclient">
+                                                    Mass Media<br>
+                                                    New York, USA
+                                                </p>
+                                                <!-- <p class="c-font" >Texas Capital Partners</p>-->
+                                            </div>
+                                        </a>
+                                        <a href="http://www.vigilant.org/" target="_blank">
+                                            <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                                <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client17.jpg"))" class="img-responsive" alt="" />
+                                                <p style="font-size:12px; font-size: 12px;
+       box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+    padding: 12px 12px;" class="aboutclient">
+                                                    HR Counselling<br>
+                                                    Portland, Oregon, USA
+                                                </p>
+                                                <!-- <p class="c-font" >Itlogic</p>-->
+                                            </div>
+                                        </a>
+                                        <a href="http://www.wanderport.com/" target="_blank">
+                                            <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                                <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client35.jpg"))" class="img-responsive" alt="" />
+                                                <p style="font-size:12px; font-size: 12px;
+           box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+        padding: 12px 12px;" class="aboutclient">
+                                                    IT Services <br>
+                                                    Portland, Oregon, USA
+                                                </p>
+                                                <!-- <p class="c-font" >Texas Capital Partners</p>-->
+                                            </div>
+                                        </a>
+
+                                        <a href="http://watsoncreative.com/" target="_blank">
+                                            <div class="col-md-3 col-sm-6 col-xs-12 c1">
+                                                <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("watson.jpg"))" class="img-responsive" alt="" />
+                                                <p style="font-size:12px; font-size: 12px;
+           box-shadow: 0px 8px 26px -7px rgba(0,0,0,0.75);
+        padding: 12px 12px;" class="aboutclient">
+                                                    IT Services <br>
+                                                    Portland, Oregon, USA
+                                                </p>
+                                                <!-- <p class="c-font" >Texas Capital Partners</p>-->
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+
+                                    <div class="row">
+                                        
+                                      
+                                      
+
+
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>&nbsp;</p>
+                    </div>
+                    <!------------ our team over  --------------------->
+
+                    <div class="vc_row-full-width vc_clearfix"></div>
+                    <!------------ clint start --------------------->
+                    <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="1.5" data-vc-parallax-image="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("counters-bg-page.jpg"))" class="vc_row wpb_row vc_row-fluid vc_custom_1454673453462 vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving">
+                        <div class="wpb_column vc_column_container vc_col-sm-3">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <script type="text/javascript">
+                                        jQuery(document).ready(function () {
+                                            jQuery(function ($) {
+
+                                                $(".hgr-counter-56f4c45d38593").appear(function () {
+                                                    $(this).countTo();
+                                                });
+                                            });
+                                        });
+                                    </script>
+                                    <div class="hgr_counter " style="background:none;border:0px;">
+                                        <div class="hgr_counter_row">
+                                            <div class="hgr_counter_content">
+                                                <h5 class="hgr_counter_number"><span class="hgr_number_string hgr-counter-56f4c45d38593" style="color:#ffffff" data-from="0" data-to="150" data-speed="5000" data-refresh-interval="50">0</span><span class="hgr_counter_units" style="color:#ffffff">+ Clients</span></h5>
+                                                <div class="hgr_counter_text" style="color:#ffffff">in four years</div>
+                                            </div>
+                                        </div>
+                                        <!-- END .hgr_counter_row -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wpb_column vc_column_container vc_col-sm-3">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <script type="text/javascript">
+                                        jQuery(document).ready(function () {
+                                            jQuery(function ($) {
+
+                                                $(".hgr-counter-56f4c45d387ee").appear(function () {
+                                                    $(this).countTo();
+                                                });
+                                            });
+                                        });
+                                    </script>
+                                    <div class="hgr_counter " style="background:none;border:0px;">
+                                        <div class="hgr_counter_row">
+                                            <div class="hgr_counter_content">
+                                                <h5 class="hgr_counter_number"><span class="hgr_number_string hgr-counter-56f4c45d387ee" style="color:#ffffff" data-from="0" data-to="20" data-speed="5000" data-refresh-interval="50">0</span><span class="hgr_counter_units" style="color:#ffffff">+ Solutions</span></h5>
+                                                <div class="hgr_counter_text" style="color:#ffffff">for Various Industries</div>
+                                            </div>
+                                        </div>
+                                        <!-- END .hgr_counter_row -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wpb_column vc_column_container vc_col-sm-3">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <script type="text/javascript">
+                                        jQuery(document).ready(function () {
+                                            jQuery(function ($) {
+
+                                                $(".hgr-counter-56f4c45d38a4a").appear(function () {
+                                                    $(this).countTo();
+                                                });
+                                            });
+                                        });
+                                    </script>
+                                    <div class="hgr_counter " style="background:none;border:0px;">
+                                        <div class="hgr_counter_row">
+                                            <div class="hgr_counter_content">
+                                                <h5 class="hgr_counter_number"><span class="hgr_number_string hgr-counter-56f4c45d38a4a" style="color:#ffffff" data-from="0" data-to="25" data-speed="5000" data-refresh-interval="50">0</span><span class="hgr_counter_units" style="color:#ffffff">+ Engineers</span></h5>
+                                                <div class="hgr_counter_text" style="color:#ffffff">in our team</div>
+                                            </div>
+                                        </div>
+                                        <!-- END .hgr_counter_row -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wpb_column vc_column_container vc_col-sm-3">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <script type="text/javascript">
+                                        jQuery(document).ready(function () {
+                                            jQuery(function ($) {
+
+                                                $(".hgr-counter-56f4c45d38ca2").appear(function () {
+                                                    $(this).countTo();
+                                                });
+                                            });
+                                        });
+                                    </script>
+                                    <div class="hgr_counter " style="background:none;border:0px;">
+                                        <div class="hgr_counter_row">
+                                            <div class="hgr_counter_content">
+                                                <h5 class="hgr_counter_number"><span class="hgr_number_string hgr-counter-56f4c45d38ca2" style="color:#ffffff" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50">0</span><span class="hgr_counter_units" style="color:#ffffff">+ Partners</span></h5>
+                                                <div class="hgr_counter_text" style="color:#ffffff">on Globe</div>
+                                            </div>
+                                        </div>
+                                        <!-- END .hgr_counter_row -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------ clint over  --------------------->
+                    <div class="vc_row-full-width vc_clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Website Boxed END-->
+    @section Scripts{
+
+        @*<script type="text/javascript">
+            var home_url = 'index.html';
+            var template_directory_uri = '#';
+            var retina_logo_url = '@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("hatch-logo-dark%402x.png"))';
+            var menu_style = '1';
+            var is_front_page = 'true';
+            var custom_js = '';
+        </script>*@
+        <div id="hgr_left"></div>
+        <div id="hgr_right"></div>
+        <div id="hgr_top"></div>
+        <div id="hgr_bottom"></div>
+
+
+
+        <style>
+            .hgr_slide_in_panel {
+                position: fixed;
+                bottom: 20px;
+                overflow: hidden;
+                margin: 0 !important;
+                box-sizing: content-box;
+                right: -400px;
+                z-index: 99999;
+            }
+
+            .slide_in_panel_close {
+                margin-right: 10px;
+                margin-top: 10px;
+                font-family: "fontawesome";
+            }
+        </style>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("comment-reply.minc1f9.js?ver=4.4.2"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.form.mind03d.js?ver=3.51.0-2014.06.20"))'></script>
+        <script type='text/javascript'>
+            var _wpcf7 = { "loaderUrl": "http:\/\/highgradelab.com\/hatch\/business\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif", "recaptchaEmpty": "Please verify that you are not a robot.", "sending": "Sending ...", "cached": "1" };
+        </script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("bootstrap.min723f.js?ver=910cd94477e91addc8f40f102a3fec2f"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("imagesloadedab72.js?ver=7dfca5aa644a1bcf8489ae6f22e7f7fa"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("isotope.pkgd.minc422.js?ver=4.11.1"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("waypoints.minc422.js?ver=4.11.1"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("venobox.mined28.js?ver=51b63f5516d49770baf0889df087c89c"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.animate-colors-minc273.js?ver=4e1ec83ce013c67ccc53c90fa51b5637"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("velocity.mina2dc.js?ver=c1b8d079c7049879838d78e0b389965e"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jcookiec433.js?ver=0f1f6cd6e0036897019b376d38593403"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("smoothscrolldd9c.js?ver=77ae36888d43fd0e3edff58e2c765108"))'></script>
+        <script type='text/javascript'>
+            var menu_js = "<script type=\"text\/javascript\">\n\t\t\t\t\tjQuery(document).ready(function($) {\n\t\t\t\t\t\t\"use strict\";\n\t\t\t\t\t\t\n\t\t\t\t\t\tvar hasBeenTrigged = false;\n\t\t\t\t\t\tvar header_height = $(\".bkaTopmenu\").outerHeight(true);\n\t\t\t\t\t\t\/\/$(\".hgr_woo_minicart\").height($( \".bkaTopmenu\").outerHeight(true) );\n\t\t\t\t\t\t$(\".hgr_woo_minicart\").height(\"80\");\n\t\t\t\t\t\t$(\".dropdown-menu\").animate({backgroundColor: \"rgba(255,255,255 , 1.0)\"}, 500);\n\t\t\t\t\t\t\t\t\t\tif ($(window).scrollTop() > 200 ) {\n\t\t\t\t\t\t\t\t\t\t$(\".bkaTopmenu\").animate({backgroundColor: \"rgba(255,255,255 , 1.0)\"}, 500);\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t}$(window).bind(\"scroll\", function() {\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tif ($(window).scrollTop() > 200 && !hasBeenTrigged ) {\n\t\t\t\t\t\t\t\t\t\t$(\".bkaTopmenu\").animate({backgroundColor: \"rgba(255,255,255 , 1.0)\"}, 500);\n\t\t\t\t\t\t\t\t\t\thasBeenTrigged = true;\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\tif ($(window).scrollTop() < 200 && hasBeenTrigged ) {\n\t\t\t\t\t\t\t\t\t\t$(\".bkaTopmenu\").animate({backgroundColor: \"rgba(255,255,255 , 0.4)\"}, 500);\n\t\t\t\t\t\t\t\t\t\thasBeenTrigged = false;\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}); }); <\/script>";
+        </script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("app5956.js?ver=a951ef6936379140991c1d53bd286d24"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("wp-embed.minc1f9.js?ver=4.4.2"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("js_composer_front.minc422.js?ver=4.11.1"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("skrollr.minc422.js?ver=4.11.1"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("vc-accordion.minc422.js?ver=4.11.1"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("vc-tta-autoplay.minc422.js?ver=4.11.1"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("vc-tabs.minc422.js?ver=4.11.1"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("modernizr.customc1f9.js?ver=4.4.2"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("stepsFormc1f9.js?ver=4.4.2"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.appearc1f9.js?ver=4.4.2"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("hgr_progressbarc1f9.js?ver=4.4.2"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("owl.carousel.minc1f9.js?ver=4.4.2"))'></script>
+        <script type='text/javascript'>
+            var _wpcf7 = { "loaderUrl": "http:\/\/highgradelab.com\/hatch\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif", "recaptchaEmpty": "Please verify that you are not a robot.", "sending": "Sending ...", "cached": "1" };
+        </script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("scripts5b31.js?ver=4.3.1"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("hgr_essentialsc1f9.js?ver=4.4.2"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("frontend68b3.js?ver=1"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.hoverIntent.minifiedc841.js?ver=b5fecb7687d51f2f352afd8d1485faf8"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("hgr_qcvb2b0.js?ver=9bc0bf339a7870d8fdd4ae7d539b0c4a"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.blockUI.min44fd.js?ver=2.70"))'></script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("counttoc1f9.js?ver=4.4.2"))'></script>
+        <script type='text/javascript'>
+            var woocommerce_params = { "ajax_url": "\/hatch\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/hatch\/about-us-page\/?wc-ajax=%%endpoint%%" };
+        </script>
+        <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("woocommerce.min4468.js?ver=2.5.5"))'></script>
+
+    }

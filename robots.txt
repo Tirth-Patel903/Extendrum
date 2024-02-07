@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /Bin/
+Disallow: /App_Code/
+Disallow: /default/
+Disallow: /Images/
+Disallow: /Scripts/
+Disallow: /_hcc_thumbs/

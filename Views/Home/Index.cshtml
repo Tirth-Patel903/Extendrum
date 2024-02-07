@@ -1,0 +1,870 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+  
+<!--Css and Script Section Start -->
+
+@section CssScripts{
+
+<link rel='stylesheet' id='boldthemes_style_css-css' href="@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("style.crushc1f9.css"))" type='text/css' media='all' data-viewport-units-buggyfill='ignore' />
+<script type="text/javascript" src="@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.min.js"))"></script>
+<link href="@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("style.css"))" type="text/css" rel="stylesheet" />
+<link href="@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("style-slider.css"))" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("webslidemenu.js"))"></script>
+<script type="text/javascript" src="@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.flexisel.js"))"></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jqueryc1d8.js?ver=1.11.3"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("miscc1f9.js?ver=4.4.2"))'></script>
+<style type="text/css">
+    body {
+        font-family: 'gothic';
+    }
+</style>
+<link rel='stylesheet' id='invory-bootstrap-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("bootstrap68b3.css?ver=1"))' type='text/css' media='all' />
+<link rel='stylesheet' id='invory-style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("style68b3.css?ver=1"))' type='text/css' media='all' />
+<link rel='stylesheet' href="@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("font.css"))" type='text/css' media='all' />
+<title>Extendrum</title>
+<link rel='stylesheet' id='hgr-vc-extender-style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("hgr-vc-extender-elements.minc1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+<link rel='stylesheet' id='hatch_style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("stylec1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("js_composer.minc422.css?ver=4.11.1"))' type='text/css' media='all' />
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jqueryc1d8.js?ver=1.11.3"))'>
+</script>
+<link rel='stylesheet' id='style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("style11b8.css?ver=4.5"))' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("responsive11b8.css?ver=4.5"))' type='text/css' media='all' />
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("plugins11a8.js?ver=20120206"))'></script>
+
+  }
+
+<!--Css and Script Section End -->
+
+<div class="top"> <a href="#" class="back-to-top"> <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("up.png"))" /> </a> </div>
+<!------------ top slaiding over ---------------->
+
+<div id="welcome" class="pagesection row  light_scheme">
+    <div class="extendrumslide1">
+        <div id="page-title">
+            <div class="flexslider" id="homepage-slider" style="">
+                <ul class="slides">
+                   
+                   
+                    <li class="sliderpage1">
+                        <div class="grid2column">
+                            <div class="featured-text bannerbg">
+                                <h2 style="font-family: 'gothic'; " class="blueslidertext">
+                                    <a href="@Url.Action("Index","About")#ourview" class="banner-title bannerfont2" style="">
+                                        Company Overview
+                                    </a>
+                                </h2>
+                                <div class="featured-text-summary">
+                                    <p class="banner-font blueslidertext">Extendrum Technologies are a Portland, OR based IT services and solutions. Founded in 2012 with a goal to provide customers with exemplary services utilizing out of the box thinking and approach handy with the latest tools and technologies and make things happen. </p>
+                                </div>
+                                <div class="featured-pricing">
+                                    <del>
+                                    </del>
+                                    <ins>
+                                    </ins>
+                                </div>
+                                <a href="@Url.Action("Index", "About")#ourview" class="ice-button">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="sliderpage2">
+                        <div class="grid2column">
+                            <div class="featured-text bannerbg">
+                                <h2 style="font-family: 'gothic'; " class="redslidertext">
+                                    <a href="@Url.Action("OurInnovations", "OurExpertise")" class="banner-title bannerfont2" style="">
+                                        Our Innovations
+                                    </a>
+                                </h2>
+                                <div class="featured-text-summary">
+                                    <p class="banner-font redslidertext">
+                                        We not only provide services but also provide solutions. Innovative solutions.
+                                        We believe in working out of the box and try to make to the finish line by 
+                                        pushing ourselves off the comfort zone.We visualizing the future and adapt to upcoming technologies which is making us help our clients to stand out in their performance.
+                                    </p>
+                                </div>
+                                <div class="featured-pricing">
+                                    <del>
+                                    </del>
+                                    <ins>
+                                    </ins>
+                                </div>
+                                <a href="@Url.Action("OurInnovations", "OurExpertise")" class="ice-button">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="sliderpage3">
+                        <div class="grid2column">
+                            <div class="featured-text bannerbg">
+                                <h2 style="font-family: 'gothic'; " class="yellowslidertext">
+                                    <a href="@Url.Action("Index", "Services")" class="banner-title bannerfont2" style="">
+                                        Our Services
+                                    </a>
+                                </h2>
+                                <div class="featured-text-summary">
+                                    <p class="banner-font yellowslidertext">Our highly qualified and certified engineers provide professional-grade services for every business needs of yours.</p>
+                                </div>
+                                <div class="featured-pricing">
+                                    <del>
+                                    </del>
+                                    <ins>
+                                    </ins>
+                                </div>
+                                <a href="@Url.Action("Index", "Services")" class="ice-button">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                  
+                    <li class="sliderpage4">
+                        <div class="grid2column">
+                            <div class="featured-text bannerbg">
+                                <h2 style="font-family: 'gothic'; " class="greenslidertext">
+                                    <a href="@Url.Action("Index", "OurProcesses")" class="banner-title bannerfont2" style="">
+                                        Our <span>Processes</span>
+                                    </a>
+                                </h2>
+                                <div class="featured-text-summary">
+                                    <p class="banner-font greenslidertext">Our processes focus on B2B needs and your goals drive us. Our processes offer wide range of solutions using best of technology to make things happen. </p>
+                                </div>
+                                <div class="featured-pricing">
+                                    <del>
+                                    </del>
+                                    <ins>
+                                    </ins>
+                                </div>
+                                <a href="@Url.Action("Index", "OurProcesses")" class="ice-button">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                  
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $('.flexslider').flexslider({
+                    animation: "fade",
+                    slideshow: true,
+                    slideshowSpeed: 8500,
+                    animationDuration: 500,
+                    directionNav: true,
+                    controlNav: true,
+                    keyboardNav: true,
+                    mousewheel: false,
+                    prevText: "Previous",
+                    nextText: "Next",
+                    pausePlay: false,
+                    pauseText: 'Pause',
+                    playText: 'Play',
+                    randomize: false,
+                    slideToStart: 0,
+                    useCSS: true,
+                    animationLoop: true,
+                    pauseOnAction: true,
+                    pauseOnHover: false
+                });
+            });
+        </script>
+    </div>
+</div>
+
+<div id="features" class="pagesection row light_scheme" style="background-color:#f7f7f7 !important;">
+    <div class="col-md-12">
+        <div class="container">
+            <div class="slideContent gu12">
+                <!------------ contant top start ---------------->
+
+                <div class="vc_row wpb_row vc_row-fluid vc_custom_1453818592782">
+                    <div class="wpb_column vc_column_container vc_col-sm-4 itservices">
+                        <div class="wpb_wrapper">
+                            <div class="hgr-content-block">
+                                <div class="hgr-contb-row"><center>
+                                    <div class="hgr-contblock-icon" style="color:#72b242;">
+                                        <img class="hosting1 rotate" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("itservices.png"))" />
+                                    </div></center>
+
+                                        <div class="hgr-content" style="padding-left:1em;">
+                                            <a href="@Url.Action("Index","Services")"><h4 style="color:#fff" class="slowdark1">IT SERVICES</h4></a>
+                                            <p style="color:#fff" class="slowdark1">We provide onsite, offshore and near-shore services and solutions to our clients on wide variety of business models across different industries. You name it.</p>
+                                        </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpb_column vc_column_container vc_col-sm-4 itservices">
+                        <div class="wpb_wrapper">
+                            <div class="hgr-content-block" >
+                                <div class="hgr-contb-row"><center>
+                        <div class="hgr-contblock-icon" style="color:#72b242;">
+                            <img class="hosting2 rotate" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("hosting.png"))" />
+                        </div>
+                    </center>
+                        <div class="hgr-content" style="padding-left:1em;">
+                            <a href="@Url.Action("Hosting","Services")"><h4 style="color:#fff" class="slowdark1">HOSTING</h4></a>
+                            <p style="color:#fff" class="slowdark1"> We provide industry-grade hosting environment, with high performance, high availability, and lightning-fast connectivity to provide effective solutions.</p>
+                        </div>
+                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wpb_column vc_column_container vc_col-sm-4 itservices">
+                        <div class="wpb_wrapper">
+                            <div class="hgr-content-block" >
+                                <div class="hgr-contb-row"><center>
+                                    <div class="hgr-contblock-icon" style="color:#72b242;">
+                                        <img class="hosting3 rotate" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("trainig.png"))" />
+                                    </div></center>
+                                    <div class="hgr-content" style="padding-left:1em;">
+                                        <a href="@Url.Action("Training","Services")"><h4 style="color:#fff" class="slowdark1">TRAINING</h4></a>
+                                        <p style="color:#fff" class="slowdark1">We provide in-depth training with highly detail-oriented, industry leading coursework in multiple formats including onsite and public delivery.  </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+                </div>
+<!------------ contant top over ---------------->
+      </div>
+    </div>
+  </div>
+</div>
+<!------------ our service start ---------------->
+<div id="services" class="pagesection row light_scheme">
+    <div class="col-md-12">
+        <div class="container">
+            <div class="port">
+                <div class="boldCell">
+                    <div class="boldCellInner">
+                        <div class="boldRow">
+                            <div class="boldRowInner">
+                                <div class="rowItem col-md-2 col-sm-4 col-ms-12 btTextLeft">
+                                    <div class="rowItemContent"> </div>
+                                </div>
+                                <div class="rowItem col-md-8 col-ms-12 btTextCenter animate animate-fadein animate-moveleft inherit">
+                                    <div class="rowItemContent">
+                                        <header class="header btClear extralarge btDash topDash  btAlternateDash">
+                                            <div class="dash">
+                                                <h1> <span class="headline vertical"><a href="@Url.Action("Index", "Services")">  <em class="black">OUR</em> <b class="animate">SERVICES</b></a> </span> </h1>
+                                            </div>
+                                            <div class="btSubTitle">
+                                                Our highly qualified and certified engineers provide professional-grade services for every business needs of yours.
+                                            </div>
+                                        </header>
+                                        <div class="btClear btSeparator bottomSemiSpaced noBorder">
+                                            <hr>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rowItem col-md-2 col-sm-4 col-ms-12 btTextLeft">
+                                    <div class="rowItemContent"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boldRow">
+                            <div class="boldRowInner">
+                                <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextCenter animate animate-fadein btTextIndent inherit bgcolo sechome4">
+                                    <div class="rowItemContent">
+                                        <div class="bpgPhoto btTextCenter">
+                                            <div class="btImage"> <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("mobileapp.png"))" /> </div>
+                                        </div>
+                                        <div class="btIconImageRow btIconsHalfHoverPosition"> <span class="btIco btIcoFilledType btIcoBigSize btIcoAccentColor btIcoOutline"> <a href="@Url.Action("Index","Services")#mobileapps" target="no_target" class="btIcoHolder overden3"> <em> </em> </a> </span> </div>
+                                        <div class="btClear btSeparator topExtraSmallSpaced noBorder"> </div>
+                                        <header class="header btClear medium">
+                                            <div class="dash">
+                                                <h3><span class="headline vertical">MOBILE APPS</span></h3>
+                                            </div>
+                                        </header>
+                                        <div class="btClear btSeparator topExtraSmallSpaced noBorder"> </div>
+                                        <div class="btText" style="height: 170px;">
+                                            <p>
+                                                We design native, hybrid and web apps for all scalable platforms. Interactive UI, eye-catching responsiveness is our expertise.
+                                            </p>
+                                        </div>
+                                        <div class="btClear btSeparator topSmallSpaced noBorder"> <a href="@Url.Action("Index","Services")#mobileapps">Read More</a> </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextCenter animate animate-fadein btTextIndent inherit bgcolo sechome3">
+                                <div class="rowItemContent">
+                                    <div class="bpgPhoto btTextCenter">
+                                        <div class="btImage"> <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("sharepoint.png"))" /> </div>
+                                    </div>
+                                    <div class="btIconImageRow btIconsHalfHoverPosition"> <span class="btIco btIcoFilledType btIcoBigSize btIcoAccentColor btIcoOutline"> <a href="@Url.Action("Index","Services")#sharepoint" target="no_target" class="btIcoHolder overden1"> <em></em> </a> </span> </div>
+                                    <div class="btClear btSeparator topExtraSmallSpaced noBorder"> </div>
+                                    <header class="header btClear medium">
+                                        <div class="dash">
+                                            <h3> <span class="headline vertical">SHAREPOINT</span> </h3>
+                                        </div>
+                                    </header>
+                                    <div class="btClear btSeparator topExtraSmallSpaced noBorder"> </div>
+                                    <div class="btText" style="height: 170px;">
+                                        <p style="font-size:13px;">
+                                            We provide project server management with SharePoint. Collaborate on document repositories, issue tracking, project progress with our solutions. We master it.
+                                        </p>
+                                    </div>
+                                    <div class="btClear btSeparator topSmallSpaced noBorder"> <a href="@Url.Action("Index","Services")#sharepoint">Read More</a> </div>
+                                </div>
+                            </div>
+
+                            <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextCenter animate animate-fadein btTextIndent inherit bgcolo sechome2">
+                                <div class="rowItemContent">
+                                    <div class="bpgPhoto btTextCenter">
+                                        <div class="btImage"> <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("microsoft.png"))" /> </div>
+                                    </div>
+                                    <div class="btIconImageRow btIconsHalfHoverPosition"> <span class="btIco btIcoFilledType btIcoBigSize btIcoAccentColor btIcoOutline"> <a href="@Url.Action("Index","Services")#dynamics" target="no_target" class="btIcoHolder overden3"> <em></em> </a> </span> </div>
+                                    <div class="btClear btSeparator topExtraSmallSpaced noBorder"> </div>
+                                    <header class="header btClear medium">
+                                        <div class="dash">
+                                            <h3> <span class="headline vertical">DYNAMICS</span> </h3>
+                                        </div>
+                                    </header>
+                                    <div class="btClear btSeparator topExtraSmallSpaced noBorder"> </div>
+                                    <div class="btText" style="height: 170px;">
+                                        <p>
+                                            With Microsoft Dynamics CRM, Nav, GP, AX, SL we provide your business with integration and customization to connect better with your customers.
+                                        </p>
+                                    </div>
+                                    <div class="btClear btSeparator topSmallSpaced noBorder"> <a href="@Url.Action("Index","Services")#dynamics">Read More</a> </div>
+                                </div>
+                            </div>
+
+                            <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextCenter animate animate-fadein btTextIndent inherit bgcolo sechome1">
+                                <div class="rowItemContent">
+                                    <div class="bpgPhoto btTextCenter">
+                                        <div class="btImage"> <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("php.png"))" /> </div>
+                                    </div>
+                                    <div class="btIconImageRow btIconsHalfHoverPosition"> <span class="btIco btIcoFilledType btIcoBigSize btIcoAccentColor btIcoOutline"> <a href="@Url.Action("Index","Services")#php" target="no_target" class="btIcoHolder overden1"> <em></em> </a> </span> </div>
+                                    <div class="btClear btSeparator topExtraSmallSpaced noBorder"> </div>
+                                    <header class="header btClear medium">
+                                        <div class="dash">
+                                            <h3> <span class="headline vertical">OPEN SOURCE</span> </h3>
+                                        </div>
+                                    </header>
+                                    <div class="btClear btSeparator topExtraSmallSpaced noBorder"> </div>
+                                    <div class="btText" style="height: 170px;">
+                                        <p>
+                                            We develop, provide services and solution support on open-source technologies including Magento, WordPress, MySQL.
+                                        </p>
+                                    </div>
+                                    <div class="btClear btSeparator topSmallSpaced noBorder"> <a href="@Url.Action("Index","Services")#php">Read More</a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="boldRow">
+                        <div class="boldRowInner">
+
+                            <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextCenter animate animate-fadein btTextIndent inherit bgcolo sechome4">
+                                <div class="rowItemContent">
+                                    <div class="bpgPhoto btTextCenter">
+                                        <div class="btImage"> <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("reporting.png"))" /> </div>
+                                    </div>
+                                    <div class="btIconImageRow btIconsHalfHoverPosition"> <span class="btIco btIcoFilledType btIcoBigSize btIcoAccentColor btIcoOutline"> <a href="@Url.Action("Index","Services")#bi" target="no_target" class="btIcoHolder overden2"> <em> </em> </a> </span> </div>
+                                    <div class="btClear btSeparator topExtraSmallSpaced noBorder"> </div>
+                                    <header class="header btClear medium">
+                                        <div class="dash">
+                                            <h3> <span class="headline vertical">POWER BI</span> </h3>
+                                        </div>
+                                    </header>
+                                    <div class="btClear btSeparator topExtraSmallSpaced noBorder"> </div>
+                                    <div class="btText" style="height: 170px;">
+                                        <p>
+                                            We provide insight into your business performance by giving your data meaning using PowerBI, a new-age tool from Microsoft to visualize your business at a glance.
+                                        </p>
+                                    </div>
+                                    <div class="btClear btSeparator topSmallSpaced noBorder"> <a href="@Url.Action("Index","Services")#bi">Read More</a> </div>
+                                </div>
+                            </div>
+
+                            <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextCenter animate animate-fadein btTextIndent inherit bgcolo sechome3">
+                                <div class="rowItemContent">
+                                    <div class="bpgPhoto btTextCenter">
+                                        <div class="btImage"> <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("ecommerce.png"))" /> </div>
+                                    </div>
+                                    <div class="btIconImageRow btIconsHalfHoverPosition"> <span class="btIco btIcoFilledType btIcoBigSize btIcoAccentColor  btIcoOutline"> <a href="@Url.Action("Index","Services")#ecommerce" target="no_target" class="btIcoHolder overden"> <em></em> </a> </span> </div>
+                                    <div class="btClear btSeparator topExtraSmallSpaced noBorder"> </div>
+                                    <header class="header btClear medium">
+                                        <div class="dash">
+                                            <h3> <span class="headline vertical">E-COMMERCE</span> </h3>
+                                        </div>
+                                    </header>
+                                    <div class="btClear btSeparator topExtraSmallSpaced noBorder"></div>
+                                    <div class="btText" style="height: 170px;">
+                                        <p>
+                                            We provide complete package of professional e-commerce services for B2B, B2C, B2M  and shipping solutions including SEO and AdWords.
+                                        </p>
+                                    </div>
+                                    <div class="btClear btSeparator topSmallSpaced noBorder"> <a href="@Url.Action("Index","Services")#ecommerce">Read More</a> </div>
+                                </div>
+                            </div>
+
+                            <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextCenter animate animate-fadein btTextIndent inherit bgcolo sechome2">
+                                <div class="rowItemContent">
+                                    <div class="bpgPhoto btTextCenter">
+                                        <div class="btImage"> <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("billd.png"))" /> </div>
+                                    </div>
+                                    <div class="btIconImageRow btIconsHalfHoverPosition"> <span class="btIco btIcoFilledType btIcoBigSize btIcoAccentColor btIcoOutline"> <a href="@Url.Action("Index","Services")#enterprise" target="no_target" class="btIcoHolder overden2"> <em></em> </a> </span> </div>
+                                    <div class="btClear btSeparator topExtraSmallSpaced noBorder"></div>
+                                    <header class="header btClear medium">
+                                        <div class="dash">
+                                            <h3> <span class="headline vertical">ENTERPRISE</span> </h3>
+                                        </div>
+                                    </header>
+                                    <div class="btClear btSeparator topExtraSmallSpaced noBorder"></div>
+                                    <div class="btText" style="height: 170px;">
+                                        <p>
+                                            We customize and integrate third-party software like SAP, PeopleSoft and Yardi. We provide long term support & solutions for various enterprise software.
+                                        </p>
+                                    </div>
+                                    <div class="btClear btSeparator topSmallSpaced noBorder"> <a href="@Url.Action("Index","Services")#enterprise">Read More</a> </div>
+                                </div>
+                            </div>
+
+                            <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextCenter animate animate-fadein btTextIndent inherit bgcolo sechome1">
+                                <div class="rowItemContent">
+                                    <div class="bpgPhoto btTextCenter">
+                                        <div class="btImage"> <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("ps.png"))" /> </div>
+                                    </div>
+                                    <div class="btIconImageRow btIconsHalfHoverPosition"> <span class="btIco btIcoFilledType btIcoBigSize btIcoAccentColor btIcoOutline"> <a href="@Url.Action("Index","Services")#adobe" target="no_target" class="btIcoHolder overden"> <em></em> </a> </span> </div>
+                                    <div class="btClear btSeparator topExtraSmallSpaced noBorder"> </div>
+                                    <header class="header btClear medium">
+                                        <div class="dash">
+                                            <h3> <span class="headline vertical">UI/UX</span> </h3>
+                                        </div>
+                                    </header>
+                                    <div class="btClear btSeparator topExtraSmallSpaced noBorder"> </div>
+                                    <div class="btText" style="height: 170px;">
+                                        <p>
+                                            Our creative team use Adobe suite softwares to design logos, webpages, visiting cards, brochures, training and professional materials. We do it better than the best.
+                                        </p>
+                                    </div>
+                                    <div class="btClear btSeparator topSmallSpaced noBorder"> <a href="@Url.Action("Index","Services")#adobe">Read More</a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boldRow">
+                        <div class="boldRowInner">
+                            <div class="rowItem col-md-12 col-ms-12 btTextCenter animate animate-fadein btTextIndent inherit">
+                                <div class="rowItemContent">
+                                    <div class="btClear btSeparator topSemiSpaced noBorder"> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------ our service over ---------------->
+<!------------ our process start ---------------->
+<section id="bt_section56ed1de113ed8" class="boldSection topSpaced bottomSpaced btDarkSkin gutter inherit wBackground cover btAccentColorBackground" style="background-image:url('images/bgn-grad.png');">
+    <div class="port">
+        <div class="boldCell">
+            <div class="boldCellInner">
+                <div class="boldRow">
+                    <div class="boldRowInner">
+                        <div class="rowItem col-md-2  col-sm-4 col-ms-12 btTextLeft">
+                            <div class="rowItemContent"></div>
+                        </div>
+                        <div class="rowItem col-md-8 col-ms-12 btTextCenter animate animate-fadein animate-moveleft inherit">
+                            <div class="rowItemContent">
+                                <header class="header btClear large btDash bottomDash  btNormalDash">
+                                    <div class="dash">
+                                        <a href="@Url.Action("Index", "OurProcesses")">
+                                            <h2><span class="headline" style="color:#12665a;"><em>OUR</em> PROCESS</span></h2>
+                                        </a>
+                                        </div>
+                                    <div class="btSubTitle">Our processes focuses on B2B needs and your goals drive us. Our processes offer wide range of solutions using best of technology to make things happen. </div>
+                                </header>
+                                <div class="btClear btSeparator topSemiSpaced noBorder"> </div>
+                            </div>
+                        </div>
+                        <div class="rowItem col-md-2 col-sm-4 col-ms-12 btTextLeft">
+                            <div class="rowItemContent"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boldRow">
+                    <div class="boldRowInner">
+                        <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextCenter animate animate-fadein inherit">
+                            <a href="@Url.Action("Index", "OurProcesses")#DESIGN">
+                                <div class="rowItemContent">
+                                    <div class="btIconImageRow">
+                                        <span class="btIco btIcoDefaultType btIcoBigSize btIcoDefaultColor">
+                                            <span>
+                                                <em>
+                                                    <img class="roted4" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("pro1.png"))" />
+                                                </em>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="btClear btSeparator bottomSmallSpaced noBorder"> </div>
+                                    <header class="header btClear medium">
+                                        <div class="dash">
+                                            <h3> <span class="headline tweet1">DESIGN & ARCHITECTURE</span></h3>
+                                        </div>
+                                    </header>
+                                    <div class="btText">
+                                        <p>
+                                            Our detail oriented Solution and Enterprise architecture aligns our technological skills with your business vision providing architectural oversight, guidance and cost effective solutions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextCenter animate animate-fadein inherit">
+                            <a href="@Url.Action("Index", "OurProcesses")#DEVELOPMENT">
+                                <div class="rowItemContent">
+                                    <div class="btIconImageRow"> <span class="btIco btIcoDefaultType btIcoBigSize btIcoDefaultColor"> <span> <em> <img class="roted4" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("pro2.png"))" /> </em> </span> </span> </div>
+                                    <div class="btClear btSeparator bottomSmallSpaced noBorder"> </div>
+                                    <header class="header btClear medium">
+                                        <div class="dash">
+                                            <h3><span class="headline tweet2">DEVELOPMENT & TESTING</span></h3>
+                                        </div>
+                                    </header>
+                                    <div class="btText">
+                                        <p>
+                                            We create prototype applications designs, develop client and server side logics, develop website content followed by Unit and integration testing for stabilization and user acceptance.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextCenter animate animate-fadein inherit">
+                            <a href="@Url.Action("Index", "OurProcesses")#INSTALLATION">
+                                <div class="rowItemContent">
+                                    <div class="btIconImageRow"> <span class="btIco btIcoDefaultType btIcoBigSize btIcoDefaultColor"> <span> <em> <img class="roted4" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("pro3.png"))" /> </em> </span> </span> </div>
+                                    <div class="btClear btSeparator bottomSmallSpaced noBorder"> </div>
+                                    <header class="header btClear medium">
+                                        <div class="dash">
+                                            <h3><span class="headline tweet3">INSTALLATION & CONFIGURATION</span></h3>
+                                        </div>
+                                    </header>
+                                    <div class="btText">
+
+                                        <p>
+                                            We guide and assist in installing critical components with setting automation jobs for efficient output of our processes and configure them  according to your business requirements.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="rowItem col-md-3 col-sm-6 col-ms-12 btTextCenter animate animate-fadein inherit">
+                            <a href="@Url.Action("Index", "OurProcesses")#MAINTENANCE">
+                                <div class="rowItemContent">
+                                    <div class="btIconImageRow"> <span class="btIco btIcoDefaultType btIcoBigSize btIcoDefaultColor"> <span> <em> <img class="roted4" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("pro4.png"))" /> </em> </span> </span> </div>
+                                    <div class="btClear btSeparator bottomSmallSpaced noBorder"> </div>
+                                    <header class="header btClear medium">
+                                        <div class="dash">
+                                            <h3><span class="headline tweet4">MAINTENANCE & SUPPORT</span></h3>
+                                        </div>
+                                    </header>
+                                    <div class="btText">
+                                        <p>
+                                            Our maintenance process involves timely updates, migration, backups and optimizations. Our support solutions monitor and upkeep performances in offline and production environments.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!------------ our process over ---------------->
+<!------------ clint start ---------------->
+
+<!--
+<div id="clients" class="pagesection row light_scheme">
+    <div class="col-md-12">
+        <div class="container">
+           
+
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12 col-xs-12" style="text-decoration: none;">
+                    <ul id="flexiselDemo3">
+                        <li>
+
+                            <a href="http://www.asentria.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client01.jpg"))"  alt="client-1" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.ignitioninterlock.biz/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client23.jpg"))"  alt="client-23" /></a>
+                        </li>
+                        <li>
+                            <a href="https://www.bastiansolutions.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client02.jpg"))"  alt="client02" /> </a>
+                        </li>
+                        <li>
+                            <a href="http://www.bestvaluepdx.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client03.jpg"))"  alt="client03" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.bluearchtech.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client36.jpg"))"  alt="client36" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.carlaprop.com/ " target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client06.jpg"))"  alt="client06" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.caveon.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client07.jpg"))"  alt="client07" /></a>
+                        </li>
+
+                        <li>
+                            <a href="http://www.colotek.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client08.jpg"))"  alt="client08" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.cspdx.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client09.jpg"))"  alt="client09" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.curas.net/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client25.jpg"))"  alt="client25" /></a>
+                        </li>
+
+                        <li>
+                            <a href="http://www.dramatists.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client26.jpg"))"  alt="client26" /></a>
+                        </li>
+                        <li>
+                            <a href="https://www.dunncarney.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client11.jpg"))"  alt="client11" /></a>
+                        </li>
+
+                <li>
+                    <a href="http://www.earth9.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("earth9.jpg"))"  alt="earth9" /></a>
+                </li>
+                        <li>
+                            <a href="http://www.ecsm.com.my/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("ecsm1.jpg"))"  alt="ecsm1" /></a>
+                        </li>
+                        <li>
+                            <a href="https://enhabit.org/#B" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client12.jpg"))"  alt="client12" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.exormedia.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client18.jpg"))"  alt="client18" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.flashtagphoto.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client14.jpg"))"  alt="client14" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.forestgroveinn.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client27.jpg"))"  alt="client27" /></a>
+                        </li>
+                        <li>
+                            <a href="http://fusioncreative.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("fusioncreative.jpg"))"  alt="fusioncreative" /></a>
+                        </li>
+
+                        <li>
+                            <a href="http://intellitect.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client16.jpg"))"  alt="client16" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.itlogicpdx.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client17.jpg"))"  alt="client17" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.leapagency.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("leap.jpg"))"  alt="leap" /></a>
+                        </li>
+                        <li>
+                            <a href="https://metropcworks.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client29.jpg"))"  alt="client29" /></a>
+                        </li>
+                        <li>
+                            <a href="http://nexfirm.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client30.jpg"))"  alt="client-7" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.nsc.org/pages/home.aspx" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("nsc.jpg"))"  alt="client-7" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.pioneerpacific.edu/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client31.jpg"))"  alt="client-7" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.primeweb.it/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("primeweb.jpg"))"  alt="client-7" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.printerland.co.uk/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("printerland.jpg"))"  alt="client-7" /></a>
+                        </li>
+                        <li>
+                            <a href="http://www.prowess.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client19.jpg"))"  alt="client-7" /></a>
+                        </li>
+
+                        <li>
+                            <a href="http://www.rentcheckcorp.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client05.jpg"))"  alt="client-7" /></a>
+                        </li>
+                <li>
+                    <a href="http://www.singlemindconsulting.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client20.jpg"))"  alt="client-7" /></a>
+                </li>
+                        <li>
+                            <a href="http://www.snapon.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client32.jpg"))"  alt="client-7" /></a>
+                        </li>
+                        <li>
+                            <a href="http://spotcolormarketing.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client33.jpg"))"  alt="client-7" /></a>
+                        </li>
+
+                        <li>
+                            <a href="http://www.sysgain.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client21.jpg"))"  alt="client-7" /></a>
+                        </li>
+
+                        <li>
+                            <a href="http://thomsonreuters.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client34.jpg"))"  alt="client-7" /></a>
+                        </li>
+
+                        <li>
+                            <a href="http://www.wanderport.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("client35.jpg"))"  alt="client-7" /></a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://watsoncreative.com/" target="_blank"><img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("watson.jpg"))"  alt="client-7" /></a>
+                        </li>
+
+
+
+
+
+                    </ul>
+                    <p>&nbsp;</p>
+
+                    <script type="text/javascript">
+
+                        $(window).load(function () {
+                            $("#flexiselDemo1").flexisel();
+                            $("#flexiselDemo2").flexisel({
+                                enableResponsiveBreakpoints: true,
+                                responsiveBreakpoints: {
+                                    portrait: {
+                                        changePoint: 480,
+                                        visibleItems: 1
+                                    },
+                                    landscape: {
+                                        changePoint: 640,
+                                        visibleItems: 2
+                                    },
+                                    tablet: {
+                                        changePoint: 768,
+                                        visibleItems: 4
+                                    }
+                                }
+                            });
+
+                            $("#flexiselDemo3").flexisel({
+                                visibleItems: 3,
+                                animationSpeed: 1000,
+                                autoPlay: true,
+                                autoPlaySpeed: 3000,
+                                pauseOnHover: true,
+                                enableResponsiveBreakpoints: true,
+                                responsiveBreakpoints: {
+                                    portrait: {
+                                        changePoint: 480,
+                                        visibleItems: 1
+                                    },
+                                    landscape: {
+                                        changePoint: 640,
+                                        visibleItems: 2
+                                    },
+                                    tablet: {
+                                        changePoint: 768,
+                                        visibleItems: 4
+                                    }
+                                }
+                            });
+
+                            $("#flexiselDemo4").flexisel({
+                                clone: false
+                            });
+
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+<!------------ clint over ---------------->
+</div>
+
+
+@section Scripts{
+@*<script type="text/javascript">
+    var home_url = 'index.html';
+    var template_directory_uri = '#';
+    var retina_logo_url = '../../Include/images/hatch-logo-dark%402x.png';
+    var menu_style = '1';
+    var is_front_page = 'true';
+    var custom_js = '';
+</script>*@
+<div id="hgr_left"></div>
+<div id="hgr_right"></div>
+<div id="hgr_top"></div>
+<div id="hgr_bottom"></div>
+<!--Website Boxed END-->
+<!-- fssearch_container END -->
+<style>
+    .hgr_slide_in_panel {
+        position: fixed;
+        bottom: 20px;
+        overflow: hidden;
+        margin: 0 !important;
+        box-sizing: content-box;
+        right: -400px;
+        z-index: 99999;
+    }
+
+    .slide_in_panel_close {
+        margin-right: 10px;
+        margin-top: 10px;
+        font-family: "fontawesome";
+    }
+</style>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("comment-reply.minc1f9.js?ver=4.4.2"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.form.mind03d.js?ver=3.51.0-2014.06.20"))'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var _wpcf7 = { "loaderUrl": "http:\/\/highgradelab.com\/hatch\/business\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif", "recaptchaEmpty": "Please verify that you are not a robot.", "sending": "Sending ...", "cached": "1" };
+    /* ]]> */
+</script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("scripts5b31.js?ver=4.3.1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("hgr_essentialsc1f9.js?ver=4.4.2"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("frontend68b3.js?ver=1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("bootstrap.min723f.js?ver=910cd94477e91addc8f40f102a3fec2f"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("imagesloadedab72.js?ver=7dfca5aa644a1bcf8489ae6f22e7f7fa"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("isotope.pkgd.minc422.js?ver=4.11.1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("waypoints.minc422.js?ver=4.11.1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("venobox.mined28.js?ver=51b63f5516d49770baf0889df087c89c"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.animate-colors-minc273.js?ver=4e1ec83ce013c67ccc53c90fa51b5637"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("velocity.mina2dc.js?ver=c1b8d079c7049879838d78e0b389965e"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jcookiec433.js?ver=0f1f6cd6e0036897019b376d38593403"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("smoothscrolldd9c.js?ver=77ae36888d43fd0e3edff58e2c765108"))'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var menu_js = "<script type=\"text\/javascript\">\n\t\t\t\t\tjQuery(document).ready(function($) {\n\t\t\t\t\t\t\"use strict\";\n\t\t\t\t\t\t\n\t\t\t\t\t\tvar hasBeenTrigged = false;\n\t\t\t\t\t\tvar header_height = $(\".bkaTopmenu\").outerHeight(true);\n\t\t\t\t\t\t\/\/$(\".hgr_woo_minicart\").height($( \".bkaTopmenu\").outerHeight(true) );\n\t\t\t\t\t\t$(\".hgr_woo_minicart\").height(\"80\");\n\t\t\t\t\t\t$(\".dropdown-menu\").animate({backgroundColor: \"rgba(255,255,255 , 1.0)\"}, 500);\n\t\t\t\t\t\t\t\t\t\tif ($(window).scrollTop() > 200 ) {\n\t\t\t\t\t\t\t\t\t\t$(\".bkaTopmenu\").animate({backgroundColor: \"rgba(255,255,255 , 1.0)\"}, 500);\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t}$(window).bind(\"scroll\", function() {\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tif ($(window).scrollTop() > 200 && !hasBeenTrigged ) {\n\t\t\t\t\t\t\t\t\t\t$(\".bkaTopmenu\").animate({backgroundColor: \"rgba(255,255,255 , 1.0)\"}, 500);\n\t\t\t\t\t\t\t\t\t\thasBeenTrigged = true;\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\tif ($(window).scrollTop() < 200 && hasBeenTrigged ) {\n\t\t\t\t\t\t\t\t\t\t$(\".bkaTopmenu\").animate({backgroundColor: \"rgba(255,255,255 , 0.4)\"}, 500);\n\t\t\t\t\t\t\t\t\t\thasBeenTrigged = false;\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}); }); <\/script>";
+    /* ]]> */
+</script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("app5956.js?ver=a951ef6936379140991c1d53bd286d24"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("wp-embed.minc1f9.js?ver=4.4.2"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("js_composer_front.minc422.js?ver=4.11.1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("skrollr.minc422.js?ver=4.11.1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("vc-accordion.minc422.js?ver=4.11.1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("vc-tta-autoplay.minc422.js?ver=4.11.1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("vc-tabs.minc422.js?ver=4.11.1"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("modernizr.customc1f9.js?ver=4.4.2"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("stepsFormc1f9.js?ver=4.4.2"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.appearc1f9.js?ver=4.4.2"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("hgr_progressbarc1f9.js?ver=4.4.2"))'></script>
+<script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("owl.carousel.minc1f9.js?ver=4.4.2"))'></script>
+<script type="text/javascript" src="@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("webslidemenu.js"))"></script>
+<script type="text/javascript" src="@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.flexisel.js"))"></script>
+}

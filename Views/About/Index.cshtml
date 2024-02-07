@@ -1,0 +1,1577 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--Css and Script Section Start -->
+@section CssScripts{
+
+    <link rel='stylesheet' id='contact-form-7-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("styles5b31.css?ver=4.3.1"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='essential-grid-plugin-settings-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("settings5bfb.css?ver=2.0.9.1"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='tp-open-sans-css' href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&amp;ver=4.4.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='tp-raleway-css' href='http://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;ver=4.4.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='tp-droid-serif-css' href='http://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700&amp;ver=4.4.2' type='text/css' media='all' />
+
+    <link rel='stylesheet' id='theshop-essentials-style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("hgr_essentialsc1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hgrmenu_frontend_style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("frontendc1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='sage-qcv-style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("hgr_qcva8c8.css?ver=5c9b904a8e09cb73a147f87d94b1bac8"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hgr-vc-fa-icons-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("font-awesome.minc1f9.css?ver=4.4.2' type='text/css"))' media='all' />
+    <link rel='stylesheet' id='hgr-vc-outline-icons-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("outline.minc1f9.css?ver=4.4.2' type='text/css"))' media='all' />
+    <link rel='stylesheet' id='hgr-vc-extender-style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("hgr-vc-extender-elements.minc1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='rs-plugin-settings-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("settingsa830.css?ver=5.2.3.5"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-layout-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("woocommerce-layout4468.css?ver=2.5.5"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-smallscreen-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("woocommerce-smallscreen4468.css?ver=2.5.5"))' type='text/css' media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' id='woocommerce-general-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("woocommerce4468.css?ver=2.5.5"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_css_bootstrap-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("bootstrap.minb4f3.css?ver=4f85128aae27be52b72f8eff266b1429"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_icons-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("iconsca1e.css?ver=6bff375d997d4aab7cc95916f46bf68d"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_fontawesome-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("font-awesome.min2fab.css?ver=0831cba6a670e405168b84aa20798347"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_css_component-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("componentecac.css?ver=4ec78b20e6d3bfab577dbb16071a9c17"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_venobox-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("venoboxec8a.css?ver=36e2a68160d731d492a8298d435af5f0"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("stylec1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='js_composer_front-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("js_composer.minc422.css?ver=4.11.1"))' type='text/css' media='all' />
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jqueryc1d8.js?ver=1.11.3"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery-migrate.min1576.js?ver=1.2.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("lightbox5bfb.js?ver=2.0.9.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.themepunch.tools.min5bfb.js?ver=2.0.9.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.themepunch.essential.min5bfb.js?ver=2.0.9.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.themepunch.revolution.mina830.js?ver=5.2.3.5"))'></script>
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var wc_add_to_cart_params = { "ajax_url": "\/hatch\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/hatch\/about-us-page\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View Cart", "cart_url": "http:\/\/highgradelab.com\/hatch\/cart\/", "is_cart": "", "cart_redirect_after_add": "no" };
+    /* ]]> */
+    </script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("frontend/add-to-cart.min4468.js?ver=2.5.5"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("vendors/woocommerce-add-to-cartc422.js?ver=4.11.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("modernizr.custom9de3.js?ver=8ad0221f07e9385429f5dd1102ba94a"))'></script>
+    <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?v=3.exp&amp;ver=4.4.2'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("classiec1f9.js?ver=4.4.2"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("uiMorphingButton_fixedc1f9.js?ver=4.4.2"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("uiMorphingButton_inflowc1f9.js?ver=4.4.2"))'></script>
+    <link rel='https://api.w.org/' href='http://highgradelab.com/hatch/wp-json/' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://highgradelab.com/hatch/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://highgradelab.com/hatch/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 4.4.2" />
+    <meta name="generator" content="WooCommerce 2.5.5" />
+    <meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress." />
+    <meta name="generator" content="Powered by Slider Revolution 5.2.3.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+    <link rel='stylesheet' id='boldthemes_style_css-css' href="@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("style.crushc1f9.css"))" type='text/css' media='all' data-viewport-units-buggyfill='ignore' />
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jqueryc1d8.js?ver=1.11.3"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("modernizr.customc1f9.js?ver=4.4.2"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("miscc1f9.js?ver=4.4.2"))'></script>
+    <style type="text/css">
+        body {
+            font-family: 'gothic';
+        }
+    </style>
+    <link rel='stylesheet' id='invory-bootstrap-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("bootstrap68b3.css?ver=1"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='invory-style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("style68b3.css?ver=1"))' type='text/css' media='all' />
+    <link rel='stylesheet' href="@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("font.css"))" type='text/css' media='all' />
+    <title>Extendrum</title>
+    <link rel='stylesheet' id='hgr-vc-extender-style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("hgr-vc-extender-elements.minc1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_fontawesome-css' href="@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("fonts/font-awesome.min2fab.css"))" type='text/css' media='all' />
+    <link rel='stylesheet' id='hatch_style-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("stylec1f9.css?ver=4.4.2"))' type='text/css' media='all' />
+    <link rel='stylesheet' id='js_composer_front-css' href='@Url.Content("~/Include/css/" + System.IO.Path.GetFileName("js_composer.minc422.css?ver=4.11.1"))' type='text/css' media='all' />
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jqueryc1d8.js?ver=1.11.3"))'>
+    </script>
+
+}
+
+<!--Css and Script Section End -->
+@*<div class="top"> <a href="#" class="back-to-top"><i class="icon fa fa-chevron-up"></i></a> </div>*@
+<div class="top">
+    <a href="#" class="back-to-top">
+        <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("up.png"))" />
+    </a>
+</div>
+<div id="website_boxed">
+    <div id="about-us-page" class="row standAlonePage light_scheme">
+        <div class="col-md-12">
+            <div class="">
+                <div class="slideContent gu12">
+                    <!------------ contant hedding start --------------------->
+                    <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="1.5" data-vc-parallax-image="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("top-1.jpg"))" class="vc_row wpb_row vc_row-fluid vc_custom_1454408868857 vc_row-has-fill vc_row-o-content-middle vc_row-flex vc_general vc_parallax vc_parallax-content-moving">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner">
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-12 col-xs-12">
+
+                                        <div class="wpb_wrapper">
+                                            <div class="wpb_text_column wpb_content_element">
+                                                <div class="wpb_wrapper">
+                                                    <p>&nbsp;</p>
+                                                    <h1><span style="color:#ffffff;" class="green">About Us</span></h1>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_text_column wpb_content_element  vc_custom_1454408708621">
+                                                <div class="wpb_wrapper">
+                                                    <h3>
+                                                        <span style="color: #9b9b9b; text-align:justify" class="green">Extendrum Technologies are a Portland, OR based IT services and solutions. Founded in 2012 with a goal to provide customers with exemplary services utilizing out of the box thinking and approach handy with the latest tools and technologies and make things happen. We put to use talents and expertise ranging from 15+ years of industry experience to young technical professionals in our projects that spreads across the globe. Extendrum provides services like web and mobile application development, Content Management Systems (CMS), E-commerce Platform Management, Customer Relationship Management System (CRM), Hotel Management System (HMS), Web Hosting and Database Management. We are a leading solutions provider of E-Commerce, Web and Data Hosting. Our certified engineers are some of the best at designing and maintaining  IT architecture and infrastructure. Our services are extended to a wide range of industries including Finance, Real Estate, Healthcare, Media, Hospitality and Government Organizations.  We are Microsoft gold partners since 2012.</span><br />
+                                                        <br />
+                                                        <span style="color: #9b9b9b;text-align:justify" class="green"> </span><br />
+                                                        <br />
+                                                        <span style="color:#9b9b9b; text-align:justify" class="green"> </span>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <!------------ contant hedding over --------------------->
+                   
+                    <div class="vc_row-full-width vc_clearfix"></div>
+                    <a id="ourview"></a>
+                    <div class="vc_row wpb_row vc_row-fluid vc_custom_1454670055907">
+                       
+                        <!------------ our mision start --------------------->
+                        <div class="wpb_column vc_column_container vc_col-sm-6">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <h4>Our Mission</h4>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454669540382">
+                                        <div class="wpb_wrapper">
+                                            <p>Our company's mission is to provide our clients with round the clock services utilizing our team of expert Engineers for a wide range of IT services, Products, IT infrastructure and Hosting services.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------ our mision over --------------------->
+                        <!------------ our vision start --------------------->
+                       
+                        <div class="wpb_column vc_column_container vc_col-sm-6">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <h4>Our Vision</h4>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454669540382">
+                                        <div class="wpb_wrapper">
+                                            <p>To be a leading provider of competitive IT services and solutions to our clients and help their business grow with our expert consulting, training and hosting solutions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------ our vision over --------------------->
+                    </div>
+
+                    <!------------ our services start --------------------->
+                    <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="1.5" data-vc-parallax-image="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("services-bg-page.jpg"))" class="vc_row wpb_row vc_row-fluid vc_custom_1454669963437 vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                          
+                                            <h2 style="    color: black;">Our Services</h2>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454670404074">
+                                        <div class="wpb_wrapper">
+                                            <h3 style="    color: black;">
+                                                Our highly qualified and certified engineers provide professional-grade services for every business needs of yours.<br />
+                                               
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1454671094857">
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner vc_custom_1454670858239">
+                                                <div class="wpb_wrapper">
+                                                    <div class="hgr-content-block " style="margin-bottom:2em;">
+                                                        <div class="hgr-contb-row">
+                                                            <center>
+                                                                <div class="hgr-contblock-icon" style="color:#1b98e0;">
+
+                                                                    <img class="aboutcon1" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("aboutcon1.png"))" />
+
+                                                                </div>
+                                                            </center> 
+                                                            <div class="hgr-content" style="padding-left:1em;">
+                                                                <h4 style="color:#23242b">CONTENT MARKETING</h4>
+                                                                <p style="color:#727272">Our content marketing strategy helps to drive traffic towards your business to increase your digital presence and bring you closer to your business goals.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner vc_custom_1454673102264">
+                                                <div class="wpb_wrapper">
+                                                    <div class="hgr-content-block " style="margin-bottom:2em;">
+                                                        <div class="hgr-contb-row">
+                                                            <center>
+                                                                <div class="hgr-contblock-icon" style="color:#1b98e0;  ">
+
+                                                                    <img class="aboutcon2" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("aboutcon2.png"))" />
+
+
+                                                                </div></center>
+                                                                <div class="hgr-content" style="padding-left:1em;">
+                                                                    <h4 style="color:#23242b">SOCIAL MEDIA</h4>
+                                                                    <p style="color:#727272">Social media engagement is important to attract target audience to your business. Our social media management strategies works to create exposure and drive branding of your business.</p>
+                                                                </div>
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner vc_custom_1454673112068">
+                                                <div class="wpb_wrapper">
+                                                    <div class="hgr-content-block " style="margin-bottom:2em;">
+                                                        <div class="hgr-contb-row">
+                                                            <center>
+                                                                <div class="hgr-contblock-icon" style="color:#1b98e0;">
+
+                                                                    <img class="aboutcon2" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("aboutcon3.png"))" />
+
+
+                                                                </div></center>
+                                                                <div class="hgr-content" style="padding-left:1em;">
+                                                                    <h4 style="color:#23242b">ADWORDS</h4>
+                                                                    <p style="color:#727272">We provide Google AdWords service to help climb the Search Engine Result Page (SERP). We know best to place this paid strategy to maximize your Return On Investment(ROI).</p>
+                                                                </div>
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1454671316806">
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner vc_custom_1454670858239">
+                                                <div class="wpb_wrapper">
+                                                    <div class="hgr-content-block " style="margin-bottom:2em;">
+                                                        <div class="hgr-contb-row">
+                                                            <center>
+                                                                <div class="hgr-contblock-icon" style="color:#1b98e0;  ">
+
+                                                                    <img class="aboutcon2" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("aboutcon4.png"))" />
+
+
+                                                                </div></center>
+                                                                <div class="hgr-content" style="padding-left:1em;">
+                                                                    <h4 style="color:#23242b">SEO</h4>
+                                                                    <p style="color:#727272">Search Engine Optimization(SEO) is what holds the key to any content marketing strategy. Our professionals employs the best analytical strategies for keyword analysis to make your business reach out to the target audience.</p>
+                                                                </div>
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner vc_custom_1454673107564">
+                                                <div class="wpb_wrapper">
+                                                    <div class="hgr-content-block " style="margin-bottom:2em;">
+                                                        <div class="hgr-contb-row">
+                                                            <center>
+                                                                <div class="hgr-contblock-icon" style="color:#1b98e0;  ">
+
+                                                                    <img class="aboutcon2" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("aboutcon5.png"))" />
+
+
+                                                                </div>
+                                                            </center>
+                                                            <div class="hgr-content" style="padding-left:1em;">
+                                                                <h4 style="color:#23242b">ECOMMERCE</h4>
+                                                                <p style="color:#727272">We provide e-commerce services like re-platform and site launch, custom application development, system QA site process and performance monitoring. We focus on designing interactive and attractive user experience to build customer loyalty.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner vc_custom_1454673116647">
+                                                <div class="wpb_wrapper">
+                                                    <div class="hgr-content-block " style="margin-bottom:2em;">
+                                                        <div class="hgr-contb-row">
+                                                            <center>
+                                                                <div class="hgr-contblock-icon" style="color:#1b98e0;  ">
+
+                                                                    <img class="aboutcon2" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("aboutcon6.png"))" />
+
+
+                                                                </div>
+                                                            </center>
+                                                            <div class="hgr-content" style="padding-left:1em;">
+                                                                <h4 style="color:#23242b">ANALYTICS</h4>
+                                                                <p style="color:#727272">Today's businesses needs insight into their customers and their internal processes to be competitive in the market. We provide just the right insight for you visualize and track your business goals.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------ our services over --------------------->
+                    <div class="vc_row-full-width vc_clearfix"></div>
+                    <a id="ourteam"></a>
+                    <!------------ our team start --------------------->
+                  
+                    <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1454671439328">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672840221">
+                                        <div class="wpb_wrapper">
+                                            <h2>Our Team</h2>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672846215">
+                                        <div class="wpb_wrapper">
+                                            <h3>
+                                                Our team is highly equipped with technological advances and working knowledge to get things done. Meet our team to know us better.
+                                                @*Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+                                                Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.*@
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1454672262675">
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey">
+                                                                <img width="585" height="317" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("Joshua.jpg"))" class="vc_single_image-img attachment-full" alt="team-1" srcset="../../Include/images/Joshua.jpg 300w, ../../Include/images/Joshua.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" />
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672413555">
+                                                        <div class="wpb_wrapper">
+                                                            <h4>Mike </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672296749">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Program Manager</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672475042 teamheight">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Mike manages Extendrum Technologies with a vision of providing professional grade IT services and Hosting solutions starting in the Northwest expanding upto global level. He is Masters in Computer Science holding 9+ years of Industry experience utilizing her expertise in what he does at Extendrum.</p><br /><br />
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672589710">
+                                                        <div class="wpb_wrapper">
+                                                            @*<p>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-linkedin" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-facebook" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-twitter" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-skype" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                            </p>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey">
+                                                                <img width="585" height="317" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("Pratik.jpg"))" class="vc_single_image-img attachment-full" alt="team-2" srcset="../../Include/images/Pratik.jpg 300w,../../Include/images/Pratik.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" />
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672921614">
+                                                        <div class="wpb_wrapper">
+                                                            <h4>Pratik</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672931429">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Chief Software Architect</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672475042 teamheight">
+                                                        <div class="wpb_wrapper">
+                                                            <p>A .NET professional with more than 5+ Years of professional IT experience in object oriented design, analysis, development and implementation of n-tier enterprise applications using Microsoft Technologies.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672589710">
+                                                        <div class="wpb_wrapper">
+                                                            @*<p>
+                                                                <a href="#"><i class="icon fa fa-linkedin" style=" font-size:18px!important; "></i></a>  <a href="#"><i class="icon fa fa-facebook" style=" font-size:18px!important; "></i></a>  <a href="#"><i class="icon fa fa-twitter" style=" font-size:18px!important; "></i></a>  <a href="#"><i class="icon fa fa-skype" style=" font-size:18px!important; "></i></a>
+                                                            </p>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey"><img width="585" height="317" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("Erika.jpg"))" class="vc_single_image-img attachment-full" alt="team-3" srcset="../../Include/images/Erika.jpg 300w,../../Include/images/Erika.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" /></div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672959025">
+                                                        <div class="wpb_wrapper">
+                                                            <h4>Erica</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672974397">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Engagement Manager</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line"></span>
+                                                        </span><span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672475042 teamheight">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Erica is responsible for running our corporate branch (Extendrum Technologies) located in Tigard, OR. Her primary purpose in this position is to identify new opportunities, coordinate the sales & consulting efforts to win these opportunities and then manage these projects to completion within the identified time frame and allocated budget.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681"><span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span> </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672989999">
+                                                        <div class="wpb_wrapper">
+                                                            @*<p><a href="#"><i class="icon fa fa-linkedin" style=" font-size:18px!important; "></i></a>  <a href="#"><i class="icon fa fa-facebook" style=" font-size:18px!important; "></i></a>  <a href="#"><i class="icon fa fa-instagram" style=" font-size:18px!important; "></i></a></p>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1454672262675">
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey">
+                                                                <img width="585" height="317" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("paresh.jpg"))" class="vc_single_image-img attachment-full" alt="team-1" srcset="../../Include/images/paresh.jpg 300w, ../../Include/images/paresh.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" />
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672413555">
+                                                        <div class="wpb_wrapper">
+                                                            <h4>Paresh</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672296749">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Technical Manager</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672475042 teamheight">
+                                                        <div class="wpb_wrapper">
+                                                            <p>A Software professional with 5+ Years IT experience and proven efficiency in the administration, designing and implementing solutions, customizations using SharePoint, CRM and ASP.NET.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672589710">
+                                                        <div class="wpb_wrapper">
+                                                            @*<p>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-linkedin" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-facebook" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-twitter" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-skype" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                            </p>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey">
+                                                                <img width="585" height="317" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("Melody.jpg"))" class="vc_single_image-img attachment-full" alt="team-1" srcset="../../Include/images/Melody.jpg 300w, ../../Include/images/Melody.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" />
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672413555">
+                                                        <div class="wpb_wrapper">
+                                                            <h4>Melody</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672296749">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Marketing Manager</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672475042 teamheight">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Thirteen years of experience working with start-ups and well established businesses across the country as a marketing manager. She offers an entrepreneurial spirit that keeps her thirsty for the unique solutions that helps you to shine among your competition.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672589710">
+                                                        <div class="wpb_wrapper">
+                                                            @*<p>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-linkedin" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-facebook" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-twitter" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-skype" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                            </p>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey">
+                                                                <img width="585" height="317" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("Pathik.jpg"))" class="vc_single_image-img attachment-full" alt="team-1" srcset="../../Include/images/Pathik.jpg 300w, ../../Include/images/Pathik.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" />
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672413555">
+                                                        <div class="wpb_wrapper">
+                                                            <h4>Pathik</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672296749">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Client Delivery Manager</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672475042 teamheight">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Responsible for client communication for project delivery and updates. Pathik brings his experience working for e-commerce companies and online giants like Amazon.com, Extendrum for meeting client's requirements and respective delegation to the technical team. He combines his experience in service industry and his education in Computer Science to bring our the technical output to client's business</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672589710">
+                                                        <div class="wpb_wrapper">
+                                                            @*<p>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-linkedin" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-facebook" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-twitter" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-skype" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                            </p>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                       
+</div>
+                                    <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1454672262675">
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey">
+                                                                <img width="585" height="317" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("ken.jpg"))" cl class="vc_single_image-img attachment-full" alt="team-1" srcset="../../Include/images/ken.jpg 300w, ../../Include/images/ken.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" />
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672413555">
+                                                        <div class="wpb_wrapper">
+                                                            <h4>Ken</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672296749">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Chief Technology Strategist</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672475042 teamheight">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Ken has background in business and network administration. He enjoys bridging the gap between technology and business goals/strategy. He thrives on finding technological solutions that streamline business processes and create efficiency within business operations.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672589710">
+                                                        <div class="wpb_wrapper">
+                                                            @*<p>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-linkedin" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-facebook" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-twitter" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-skype" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                            </p>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey">
+                                                                <img width="585" height="317" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("Arth.jpg"))" class="vc_single_image-img attachment-full" alt="team-1" srcset="../../Include/images/Arth.jpg 300w, ../../Include/images/Arth.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" />
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672413555">
+                                                        <div class="wpb_wrapper">
+                                                            <h4>Arth </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672296749">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Technical Manager</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672475042 teamheight">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Proactive IT professional with 5+ years of experience  in the area of analysis, design, development and implementation of websites and varied systems using  backend technologies like AS400 and also ASP.NET MVC, design patterns and other Microsoft and back end technologies.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672589710">
+                                                        <div class="wpb_wrapper">
+                                                            @*<p>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-linkedin" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-facebook" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-twitter" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-skype" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                            </p>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey">
+                                                                <img width="585" height="317" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("nitin.jpg"))" class="vc_single_image-img attachment-full" alt="team-1" srcset="../../Include/images/nitin.jpg 300w, ../../Include/images/nitin.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" />
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672413555">
+                                                        <div class="wpb_wrapper">
+                                                            <h4>Nitin</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672296749">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Technical Manager</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672475042 teamheight">
+                                                        <div class="wpb_wrapper">
+                                                            <p>A dedicated .NET professional with 5+ years of experience in the area of analysis, design, development and implementation of web sites  and other deep and varied systems that utilise ASP.NET, Microsoft technologies and design patterns throughout their full project life cycle.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672589710">
+                                                        <div class="wpb_wrapper">
+                                                            @*<p>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-linkedin" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-facebook" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-twitter" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-skype" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                            </p>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1454672262675">
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey">
+                                                                <img width="585" height="317" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("default.jpg"))" class="vc_single_image-img attachment-full" alt="team-1" srcset="../../Include/images/default.jpg 300w, ../../Include/images/default.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" />
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672413555">
+                                                        <div class="wpb_wrapper">
+                                                            <h4>Joshua</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672296749">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Project Manager</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672475042 teamheight">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Joshua brings extensive experience from his position Oregonian newspaper for nine years. His sharpened copywriting and SEO skills has kept pace with current marketing needs.  He has worked on SEO for companies of all sizes, from Carrier HVAC, Hewlett Packard to local start-ups and mom and pop store fronts. Joshua has a success rate with digital marketing clients.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672589710">
+                                                        <div class="wpb_wrapper">
+                                                            @*<p>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-linkedin" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-facebook" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-twitter" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-skype" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                            </p>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey">
+                                                                <img width="585" height="317" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("Kailesh.jpg"))" class="vc_single_image-img attachment-full" alt="team-1" srcset="../../Include/images/Kailesh.jpg 300w, ../../Include/images/Kailesh.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" />
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672413555">
+                                                        <div class="wpb_wrapper">
+                                                            <h4>Kailesh </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672296749">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Client Delivery Manager</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672475042 teamheight">
+                                                        <div class="wpb_wrapper">
+                                                            <p>He develops and grows existing business while building meaningful and lasting relationships with clients. Generating new accounts as well as expanding existing ones. Recognizes the legal exposure and compliance issues associated and having a plan to prepare and best leverage the essential role of business development.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672589710">
+                                                        <div class="wpb_wrapper">
+                                                            @*<p>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-linkedin" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-facebook" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-twitter" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-skype" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                            </p>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey">
+                                                                <img width="585" height="317" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("nandita.jpg"))" class="vc_single_image-img attachment-full" alt="team-1" srcset="../../Include/images/nandita.jpg 300w, ../../Include/images/nandita.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" />
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672413555">
+                                                        <div class="wpb_wrapper">
+                                                            <h4>Nandita </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672296749">
+                                                        <div class="wpb_wrapper">
+                                                            <p>SharePoint Trainer</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672475042 teamheight">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Nandita is a SharePoint and Office 365 expert, speaker, author and educator. She is well-versed in helping organizations make the most of their SharePoint environments using out-of-box functionalities such as workflows, forms and Web parts. Nandita’s technical expertise also includes over 12 years of experience working with Microsoft’s messaging and collaboration systems.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672589710">
+                                                        <div class="wpb_wrapper">
+                                                            @*<p>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-linkedin" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-facebook" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-twitter" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-skype" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                            </p>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                       </div>
+                                    <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1454672262675">
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey">
+                                                                <img width="585" height="317" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("default.jpg"))" class="vc_single_image-img attachment-full" alt="team-1" srcset="../../Include/images/default.jpg 300w, ../../Include/images/default.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" />
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672413555">
+                                                        <div class="wpb_wrapper">
+                                                            <h4>Kevin </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672296749">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Network Administrator</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672475042 teamheight">
+                                                        <div class="wpb_wrapper">
+                                                            <p>He has extensive experience and a proven record of accomplishments in Information Technology Management and network administration. He builds back office architecture for server and application automation with monitoring and data analysis.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672589710">
+                                                        <div class="wpb_wrapper">
+                                                            @*<p>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-linkedin" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-facebook" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-twitter" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-skype" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                            </p>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey">
+                                                                <img width="585" height="317" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("default.jpg"))" class=" vc_single_image-img attachment-full" alt="team-1" srcset="../../Include/images/dharmesh.jpg 300w, ../../Include/images/dharmesh.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" />
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672413555">
+                                                        <div class="wpb_wrapper">
+                                                            <h4>Brian </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672296749">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Sales Manager</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672475042 teamheight">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Extensive experience in delivering cost-effective and innovative IT to engineering and high volume manufacturing. Track record of developing and implementing highest # of process changes for 3 out of 6 years within automation integration team and available for consulting.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672589710">
+                                                        <div class="wpb_wrapper">
+                                                            @*<p>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-linkedin" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-facebook" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-twitter" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-skype" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                            </p>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_center">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey">
+                                                                <img width="585" height="317" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("janak.jpg"))" c class="vc_single_image-img attachment-full" alt="team-1" srcset="../../Include/images/janak.jpg 300w, ../../Include/images/janak.jpg 500w" sizes="(max-width: 500px) 100vw, 500px" />
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672413555">
+                                                        <div class="wpb_wrapper">
+                                                            <h4>Janak </h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672296749">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Accounting manager</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672475042 teamheight">
+                                                        <div class="wpb_wrapper">
+                                                            <p>Worked with small to mid-size companies, doing accounting and income tax preparation for individuals, partnerships and corporations. Full payroll service, specializing in Hotel industries.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1454672390681  vc_custom_1454672390681">
+                                                        <span class="vc_sep_holder vc_sep_holder_l">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                        <span class="vc_sep_holder vc_sep_holder_r">
+                                                            <span class="vc_sep_line">
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1454672589710">
+                                                        <div class="wpb_wrapper">
+                                                            @*<p>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-linkedin" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-facebook" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-twitter" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <i class="icon fa fa-skype" style=" font-size:18px!important;">
+                                                                    </i>
+                                                                </a>
+                                                            </p>*@
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------ our team over  --------------------->
+
+                    <div class="vc_row-full-width vc_clearfix"></div>
+                    <!------------ clint start --------------------->
+                    <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="1.5" data-vc-parallax-image="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("counters-bg-page.jpg"))" class="vc_row wpb_row vc_row-fluid vc_custom_1454673453462 vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving">
+                        <div class="wpb_column vc_column_container vc_col-sm-3">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <script type="text/javascript">
+                                        jQuery(document).ready(function () {
+                                            debugger
+							jQuery(function($) {
+
+								$(".hgr-counter-56f4c45d38593").appear(function() {
+								    $(this).countTo();
+
+								});
+							});
+						});
+                                    </script>
+                                     <div class="hgr_counter " style="background:none;border:0px;">
+                                        <div class="hgr_counter_row">
+                                            <div class="hgr_counter_content">
+                                                <h5 class="hgr_counter_number"><span class="hgr_number_string hgr-counter-56f4c45d38593" style="color:#ffffff" data-from="0" data-to="150" data-speed="5000" data-refresh-interval="50">0</span><span class="hgr_counter_units" style="color:#ffffff">+ Clients</span></h5>
+                                                <div class="hgr_counter_text" style="color:#ffffff">in four years</div>
+                                            </div>
+                                        </div>
+                                        <!-- END .hgr_counter_row -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wpb_column vc_column_container vc_col-sm-3">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <script type="text/javascript">
+                                        jQuery(document).ready(function () {
+
+							jQuery(function($) {
+
+								$(".hgr-counter-56f4c45d387ee").appear(function() {
+									$(this).countTo();
+								});
+							});
+						});
+                                    </script>
+                                    <div class="hgr_counter " style="background:none;border:0px;">
+                                        <div class="hgr_counter_row">
+                                            <div class="hgr_counter_content">
+                                                <h5 class="hgr_counter_number"><span class="hgr_number_string hgr-counter-56f4c45d387ee" style="color:#ffffff" data-from="0" data-to="20" data-speed="5000" data-refresh-interval="50">0</span><span class="hgr_counter_units" style="color:#ffffff">+ Solutions</span></h5>
+                                                <div class="hgr_counter_text" style="color:#ffffff">for Various Industries</div>
+                                            </div>
+                                        </div>
+                                        <!-- END .hgr_counter_row -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wpb_column vc_column_container vc_col-sm-3">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <script type="text/javascript">
+                                        jQuery(document).ready(function () {
+                                            debugger
+						    jQuery(function ($) {
+
+
+								$(".hgr-counter-56f4c45d38a4a").appear(function() {
+									$(this).countTo();
+								});
+							});
+						});
+                                    </script>
+                                    <div class="hgr_counter " style="background:none;border:0px;">
+                                        <div class="hgr_counter_row">
+                                            <div class="hgr_counter_content">
+                                                <h5 class="hgr_counter_number"><span class="hgr_number_string hgr-counter-56f4c45d38a4a" style="color:#ffffff" data-from="0" data-to="25" data-speed="5000" data-refresh-interval="50">0</span><span class="hgr_counter_units" style="color:#ffffff">+ Engineers</span></h5>
+                                                <div class="hgr_counter_text" style="color:#ffffff">in our team</div>
+                                            </div>
+                                        </div>
+                                        <!-- END .hgr_counter_row -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wpb_column vc_column_container vc_col-sm-3">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <script type="text/javascript">
+						jQuery(document).ready(function() {
+							jQuery(function($) {
+
+								$(".hgr-counter-56f4c45d38ca2").appear(function() {
+									$(this).countTo();
+								});
+							});
+						});
+                                    </script>
+                                    <div class="hgr_counter " style="background:none;border:0px;">
+                                        <div class="hgr_counter_row">
+                                            <div class="hgr_counter_content">
+                                                <h5 class="hgr_counter_number"><span class="hgr_number_string hgr-counter-56f4c45d38ca2" style="color:#ffffff" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50">0</span><span class="hgr_counter_units" style="color:#ffffff">+ Partners</span></h5>
+                                                <div class="hgr_counter_text" style="color:#ffffff">on Globe</div>
+                                            </div>
+                                        </div>
+                                        <!-- END .hgr_counter_row -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------ clint over  --------------------->
+                    <div class="vc_row-full-width vc_clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------ footer start  --------------------->
+</div>
+
+@section Scripts{
+    @*<script type="text/javascript">
+      var home_url = 'index.html';
+      var template_directory_uri = '#';
+      var retina_logo_url = '@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("hatch-logo-dark%402x.png"))';
+      var menu_style = '1';
+      var is_front_page = 'true';
+      var custom_js = '';
+    </script>*@
+    <div id="hgr_left"></div>
+    <div id="hgr_right"></div>
+    <div id="hgr_top"></div>
+    <div id="hgr_bottom"></div>
+
+
+    <!-- fssearch_container END -->
+    <style>
+        .hgr_slide_in_panel {
+            position: fixed;
+            bottom: 20px;
+            overflow: hidden;
+            margin: 0 !important;
+            box-sizing: content-box;
+            right: -400px;
+            z-index: 99999;
+        }
+
+        .slide_in_panel_close {
+            margin-right: 10px;
+            margin-top: 10px;
+            font-family: "fontawesome";
+        }
+    </style>
+
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("comment-reply.minc1f9.js?ver=4.4.2"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.form.mind03d.js?ver=3.51.0-2014.06.20"))'></script>
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var _wpcf7 = { "loaderUrl": "http:\/\/highgradelab.com\/hatch\/business\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif", "recaptchaEmpty": "Please verify that you are not a robot.", "sending": "Sending ...", "cached": "1" };
+    /* ]]> */
+    </script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("bootstrap.min723f.js?ver=910cd94477e91addc8f40f102a3fec2f"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("imagesloadedab72.js?ver=7dfca5aa644a1bcf8489ae6f22e7f7fa"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("isotope.pkgd.minc422.js?ver=4.11.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("waypoints.minc422.js?ver=4.11.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("venobox.mined28.js?ver=51b63f5516d49770baf0889df087c89c"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.animate-colors-minc273.js?ver=4e1ec83ce013c67ccc53c90fa51b5637"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("velocity.mina2dc.js?ver=c1b8d079c7049879838d78e0b389965e"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jcookiec433.js?ver=0f1f6cd6e0036897019b376d38593403"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("smoothscrolldd9c.js?ver=77ae36888d43fd0e3edff58e2c765108"))'></script>
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var menu_js = "<script type=\"text\/javascript\">\n\t\t\t\t\tjQuery(document).ready(function($) {\n\t\t\t\t\t\t\"use strict\";\n\t\t\t\t\t\t\n\t\t\t\t\t\tvar hasBeenTrigged = false;\n\t\t\t\t\t\tvar header_height = $(\".bkaTopmenu\").outerHeight(true);\n\t\t\t\t\t\t\/\/$(\".hgr_woo_minicart\").height($( \".bkaTopmenu\").outerHeight(true) );\n\t\t\t\t\t\t$(\".hgr_woo_minicart\").height(\"80\");\n\t\t\t\t\t\t$(\".dropdown-menu\").animate({backgroundColor: \"rgba(255,255,255 , 1.0)\"}, 500);\n\t\t\t\t\t\t\t\t\t\tif ($(window).scrollTop() > 200 ) {\n\t\t\t\t\t\t\t\t\t\t$(\".bkaTopmenu\").animate({backgroundColor: \"rgba(255,255,255 , 1.0)\"}, 500);\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t}$(window).bind(\"scroll\", function() {\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tif ($(window).scrollTop() > 200 && !hasBeenTrigged ) {\n\t\t\t\t\t\t\t\t\t\t$(\".bkaTopmenu\").animate({backgroundColor: \"rgba(255,255,255 , 1.0)\"}, 500);\n\t\t\t\t\t\t\t\t\t\thasBeenTrigged = true;\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\tif ($(window).scrollTop() < 200 && hasBeenTrigged ) {\n\t\t\t\t\t\t\t\t\t\t$(\".bkaTopmenu\").animate({backgroundColor: \"rgba(255,255,255 , 0.4)\"}, 500);\n\t\t\t\t\t\t\t\t\t\thasBeenTrigged = false;\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}); }); <\/script>";
+    /* ]]> */
+    </script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("app5956.js?ver=a951ef6936379140991c1d53bd286d24"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("wp-embed.minc1f9.js?ver=4.4.2"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("js_composer_front.minc422.js?ver=4.11.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("skrollr.minc422.js?ver=4.11.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("vc-accordion.minc422.js?ver=4.11.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("vc-tta-autoplay.minc422.js?ver=4.11.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("vc-tabs.minc422.js?ver=4.11.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("modernizr.customc1f9.js?ver=4.4.2"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("stepsFormc1f9.js?ver=4.4.2"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.appearc1f9.js?ver=4.4.2"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("hgr_progressbarc1f9.js?ver=4.4.2"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("owl.carousel.minc1f9.js?ver=4.4.2"))'></script>
+
+
+
+
+    <script type='text/javascript'>
+    var _wpcf7 = { "loaderUrl": "http:\/\/highgradelab.com\/hatch\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif", "recaptchaEmpty": "Please verify that you are not a robot.", "sending": "Sending ...", "cached": "1" };
+    </script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("scripts5b31.js?ver=4.3.1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("hgr_essentialsc1f9.js?ver=4.4.2"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("frontend68b3.js?ver=1"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.hoverIntent.minifiedc841.js?ver=b5fecb7687d51f2f352afd8d1485faf8"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("hgr_qcvb2b0.js?ver=9bc0bf339a7870d8fdd4ae7d539b0c4a"))'></script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("jquery.blockUI.min44fd.js?ver=2.70"))'></script>
+
+
+
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("counttoc1f9.js?ver=4.4.2"))'></script>
+
+    <script type='text/javascript'>
+    var woocommerce_params = { "ajax_url": "\/hatch\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/hatch\/about-us-page\/?wc-ajax=%%endpoint%%" };
+    </script>
+    <script type='text/javascript' src='@Url.Content("~/Include/js/" + System.IO.Path.GetFileName("woocommerce.min4468.js?ver=2.5.5"))'></script>
+}

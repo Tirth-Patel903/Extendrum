@@ -1,0 +1,156 @@
+﻿
+
+<div class="socialicon1">
+    <div class="socialicon2">
+        @*<div class="socialicon3">
+
+            <img class="fb1" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("fbicon1.png"))" />
+        </div>
+        <div class="socialicon4">
+            <img class="fb2" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("fbicon2.png"))" />
+        </div>
+        <div class="socialicon5">
+            <img class="fb3" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("fbicon3.png"))" />
+        </div>*@
+
+        <div class="socialicon3">
+            <div style="position: absolute; left: -10px;  background-color: #323232;  top: -48px; border-radius: 0 4px 0 0;">
+
+                <img style="margin: 0; padding: 6px 0 0 18px; position: relative;  width: 82%;" class="" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("fbicon4.png"))" />
+
+            </div>
+            <div style="position: relative; float: left; left: -74px; background-color: #323232; top: -10px; padding: 8px 11px 12px 11px;  border-radius: 5px 0;">
+                <a href="#"><img class="fb1" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("fbicon1.png"))" /></a>
+                <a href="#"><img class="fb2" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("fbicon2.png"))" /></a>
+                <a href="#"><img class="fb3" src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("fbicon3.png"))" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row bkaTopmenu bka_menu">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="@Url.Action("Index","Home")">
+                <span class="helper">
+                </span>
+                <img src="@Url.Content("~/Include/images/" + System.IO.Path.GetFileName("extendrum-logo-dark.png"))" width="174" height="60" alt="" class="logo" />
+            </a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#hgr-navbar-collapse-1">
+                <span class="icon-bar">
+                </span>
+                <span class="icon-bar">
+                </span>
+                <span class="icon-bar">
+                </span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="hgr-navbar-collapse-1">
+            <ul id="mainNavUl" class="nav navbar-nav navbar-right">
+                <li id="menu-item-457" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-457 dropdown">
+                    <a title="Home" href="@Url.Action("Index", "Home")"  class="dropdown-toggle" >
+                        Home
+                    </a>
+                </li>
+                <li id="menu-item-458" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-458 dropdown">
+                    <a title="Pages" href="@Url.Action("Index", "About")" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">
+                        About Us <span class="caret"> </span>
+                    </a>
+                   <ul role="menu" class=" dropdown-menu multi-level">
+                        <li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-470 aboutmenu">
+                            <a title="About Us" href="@Url.Action("Index", "About")#ourview">
+                                Company Overview
+                            </a>
+                        </li>
+                        <li id="menu-item-471" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-471 aboutmenu">
+                            <a title="Services" href="@Url.Action("Index", "About")#ourteam">
+                                Our Team
+                            </a>
+                        </li>
+                       <li id="menu-item-472" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-472 aboutmenu">
+                            <a title="Contact" href="@Url.Action("Index", "Clientele")">
+                                Clientele
+                            </a>
+                        </li>
+                        <li id="menu-item-472" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-472 aboutmenu">
+                            <a title="Contact" href="@Url.Action("Index", "Testimonials")">
+                                Success Stories
+                            </a>
+                        </li> 
+                    </ul>
+                </li>
+                <li id="menu-item-460" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-460 dropdown">
+                    <a title="Shop"  href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">
+                        Services <span class="caret">
+                        </span>
+                    </a>
+                    <ul role="menu" class=" dropdown-menu multi-level">
+                        <li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-470">
+                            <a title="About Us" href="@Url.Action("Index", "Services")">IT Services</a>
+                        </li>
+                        <li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-470">
+                            <a title="About Us" href="@Url.Action("Hosting", "Services")">Hosting</a>
+                        </li>
+                          <!-- <li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-470">
+                            <a title="About Us" href="@Url.Action("Training", "Services")">Training</a>
+                        </li> -->
+                    </ul>
+                </li>
+                <li id="menu-item-461" class="menu-item menu-item-type-custom menu-item-object-custom hasmegamenu menu-item-461 dropdown">
+                    <a title="Elements" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">
+                        Our Expertise <span class="caret"></span>
+                    </a>
+                    <ul role="menu" class=" dropdown-menu multi-level">
+                        <li id="menu-item-469" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-470">
+                            <a title="wedo" href="@Url.Action("Index", "Services")"> Our Services </a>
+                        </li>
+                        <!-- <li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-470">
+                            <a title="Expertise" href="@Url.Action("OurInnovations", "OurExpertise")"> Our Innovations </a>
+                        </li>  -->  
+                        <li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-470">
+                            <a title="Expertise" href="@Url.Action("Index","OurProcesses")"> Our Processes </a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="menu-item-459" class="menu-item menu-item-type-custom menu-item-object-custom hasmegamenu menu-item-459 dropdown">
+                    <a title="Portfolio" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">
+                        Solutions <span class="caret"> </span>
+                    </a>
+                    <ul role="menu" class=" dropdown-menu multi-level">
+                        <li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-470">
+                            <a title="About Us" href="#" onclick="window.open('http://acommerceserver.com/', '_blank')"> ACommerce (ACS) </a>
+                        </li>
+                        <li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-470">
+                            <a title="About Us" href="#" onclick="window.open('http://www.aeship.com/', '_blank')"> AEShip (AES & ASM) </a>
+                        </li>
+                     
+                        <li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-470">
+                            <a title="About Us" href="#" onclick="window.open('http://eiqpoint.com/', '_blank')"> EiQPoint (SharePoint Apps) </a>
+                        </li>
+                        <li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-470">
+                            <a title="About Us" href="#" onclick="window.open('http://www.myhotelcheckin.com/', '_blank')"> Hotel Management (HMS) </a>
+                        </li>
+                        <li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-470">
+                            <a title="About Us" href="@Url.Action("OurInnovations","OurExpertise")#mobileapps" target='_blank'> Mobile Apps </a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="menu-item-462" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-462 dropdown">
+                    <a title="Blog" href="@Url.Action("Index", "ContactUs")" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true"> Contact <span class="caret"></span> </a>
+                    <ul role="menu" class=" dropdown-menu multi-level">
+                        <li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-470">
+                            <a title="About Us" href="#" onclick="window.open('http://helpdesk.extendrum.com/', '_blank')"> Help Desk Center </a>
+                        </li>
+                        <li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-470">
+                            <a title="About Us" href="#" onclick="window.open('http://helpdesk.extendrum.com/', '_blank')"> Community Center </a>
+                        </li>
+                        <li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-470">
+                            <a title="About Us" href="#" onclick="window.open('http://helpdesk.extendrum.com/', '_blank')"> Training Center </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="header_spacer"></div>
